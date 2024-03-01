@@ -141,14 +141,14 @@ const votelist = () => {
       {/* ↓右邊那一列按鈕↓ */}
       <div id="voteListBtn">
         <div className="circleOF" id="cSearch">
-          <img src="../../public/icon/icon_search.png" alt="" />
+          <img src="/icon/icon_search.png" alt="" />
         </div>
         <div className="circleOF" id="cRefresh">
-          <img src="../../public/icon/icon_refresh.png" alt="" />
+          <img src="/icon/icon_refresh.png" alt="" />
         </div>
         <div id="cScroll"></div>
         <div className="circleOF" id="cInfor">
-          <img src="../../public/icon/icon_information.png" alt="" />
+          <img src="/icon/icon_information.png" alt="" />
         </div>
       </div>
     </div>

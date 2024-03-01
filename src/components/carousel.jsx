@@ -66,21 +66,13 @@ const carousel = () => {
         >
           <div className="swiper-wrapper">
             <SwiperSlide className="swiper-slide sShadow">
-              <img
-                src="../../public/homepage/cadicate_T2.png"
-                alt=""
-                onclick="open01()"
-              />
+              <img src="/homepage/cadicate_T2.png" alt="" onclick="open01()" />
             </SwiperSlide>
             <SwiperSlide className="swiper-slide sShadow">
               <img src="/homepage/cadicate_H2.png" alt="" onclick="open02()" />
             </SwiperSlide>
             <SwiperSlide className="swiper-slide sShadow">
-              <img
-                src="../../public/homepage/cadicate_S2.png"
-                alt=""
-                onclick="open03()"
-              />
+              <img src="/homepage/cadicate_S2.png" alt="" onclick="open03()" />
             </SwiperSlide>
 
             {/* Navigation buttons */}
@@ -100,13 +92,13 @@ const carousel = () => {
 
           <div className="swiper-wrapper">
             <SwiperSlide className="swiper-slide">
-              <img src="../../public/homepage/slogan_1.png" alt="" />
+              <img src="/homepage/slogan_1.png" alt="" />
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
-              <img src="../../public/homepage/slogan_2.png" alt="" />
+              <img src="/homepage/slogan_2.png" alt="" />
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
-              <img src="../../public/homepage/slogan_3.png" alt="" />
+              <img src="/homepage/slogan_3.png" alt="" />
             </SwiperSlide>
           </div>
 

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/header.css";
-import Bigicon from "../../public/icon/Svg/font_big.svg?react";
-import Smallicon from "../../public/icon/Svg/font_small.svg?react";
-import Shareicon from "../../public/icon/Svg/share.svg?react";
+import Bigicon from "/icon/Svg/font_big.svg?react";
+import Smallicon from "/icon/Svg/font_small.svg?react";
+import Shareicon from "/icon/Svg/share.svg?react";
 
 const header = () => {
   const [sharebtn, setsharebtn] = useState(false);
@@ -35,7 +35,7 @@ const header = () => {
             <ul className="menu">
               <li>
                 <Link to="/mappage">
-                  <img src="../../public/icon/headphones2.png" alt="" />
+                  <img src="/icon/headphones2.png" alt="" />
                   開票地圖
                 </Link>
               </li>
@@ -80,21 +80,9 @@ const header = () => {
               : ""
           }`}
         >
-          <img
-            onClick={setBack}
-            src="../../public/icon/Facebook.png"
-            alt="facebook"
-          />
-          <img
-            onClick={setBack}
-            src="../../public/icon/Instagram.png"
-            alt="instagram"
-          />
-          <img
-            onClick={setBack}
-            src="../../public/icon/TwitterX.png"
-            alt="twitter"
-          />
+          <img onClick={setBack} src="/icon/Facebook.png" alt="facebook" />
+          <img onClick={setBack} src="/icon/Instagram.png" alt="instagram" />
+          <img onClick={setBack} src="/icon/TwitterX.png" alt="twitter" />
           <img
             onClick={setBack}
             src={process.env.PUBLIC_URL + "/icon/LINE.png"}
