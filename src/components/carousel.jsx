@@ -47,11 +47,7 @@ const carousel = () => {
   return (
     <div>
       <div className="swiper-container">
-        <img
-          className="left-rect"
-          src="../../public/homepage/left_rectangle.png"
-          alt=""
-        />
+        <img className="left-rect" src="/homepage/left_rectangle.png" alt="" />
         {/* Swiper 1 */}
         <Swiper
           effect={"cards"}
@@ -77,11 +73,7 @@ const carousel = () => {
               />
             </SwiperSlide>
             <SwiperSlide className="swiper-slide sShadow">
-              <img
-                src="../../public/homepage/cadicate_H2.png"
-                alt=""
-                onclick="open02()"
-              />
+              <img src="/homepage/cadicate_H2.png" alt="" onclick="open02()" />
             </SwiperSlide>
             <SwiperSlide className="swiper-slide sShadow">
               <img
