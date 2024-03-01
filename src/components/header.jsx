@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/header.css";
-import Bigicon from "/icon/Svg/font_big.svg?react";
+import Bigicon from "/icon/Svg/font_big.svg";
 import Smallicon from "/icon/Svg/font_small.svg?react";
 import Shareicon from "/icon/Svg/share.svg?react";
 
