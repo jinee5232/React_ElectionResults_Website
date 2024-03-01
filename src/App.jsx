@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Layout";
-import Homepage from "./pages/Homepage";
-import MapPage from "./pages/MapPage";
+import Layout from "./Layout.jsx";
+import Homepage from "./pages/Homepage.jsx";
+import MapPage from "./pages/MapPage.jsx";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";

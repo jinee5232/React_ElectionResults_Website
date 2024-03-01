@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import "../styles/mapppage.css";
-import Votelist from "../components/votelist";
+import Votelist from "../components/votelist.jsx";
 
 const MapPage = () => {
   let [mapiframe, setMapiframe] = useState("https://plotdb.io/v/chart/34089");
