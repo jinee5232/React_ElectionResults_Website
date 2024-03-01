@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Homepage from "./pages/Homepage";
+import MapPage from "./pages/MapPage";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -35,7 +36,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Homepage />}></Route>
-            {/* <Route path="mappage" element={<MapPage />}></Route> */}
+            <Route path="mappage" element={<MapPage />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
