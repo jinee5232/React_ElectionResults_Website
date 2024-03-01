@@ -96,11 +96,7 @@ const header = () => {
             alt="twitter"
           />
           <img onClick={setBack} src="../../public/icon/LINE.png" alt="line" />
-          <img
-            onClick={setBack}
-            src="../../public/icon/Plurk.png"
-            alt="plurk"
-          />
+          <img onClick={setBack} src="/icon/Plurk.png" alt="plurk" />
         </div>
       </header>
     </div>
