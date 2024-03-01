@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import * as d3 from "d3";
 
 import moment from "moment";
 import "../styles/votelist.css";
-import axios from "axios";
 import CITY_URL from "../assets/json/area_vote.json";
 
 const votelist = () => {
