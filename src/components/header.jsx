@@ -90,7 +90,7 @@ const header = () => {
           />
           <img
             onClick={setBack}
-            src={process.env.PUBLIC_URL + "/icon/Plurk.png"}
+            src="%PUBLIC_URL%/icon/Plurk.png"
             alt="plurk"
           />
         </div>
