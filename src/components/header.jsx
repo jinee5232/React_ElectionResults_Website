@@ -95,8 +95,16 @@ const header = () => {
             src="../../public/icon/TwitterX.png"
             alt="twitter"
           />
-          <img onClick={setBack} src="../../public/icon/LINE.png" alt="line" />
-          <img onClick={setBack} src="/icon/Plurk.png" alt="plurk" />
+          <img
+            onClick={setBack}
+            src={process.env.PUBLIC_URL + "/icon/LINE.png"}
+            alt="line"
+          />
+          <img
+            onClick={setBack}
+            src={process.env.PUBLIC_URL + "/icon/Plurk.png"}
+            alt="plurk"
+          />
         </div>
       </header>
     </div>
