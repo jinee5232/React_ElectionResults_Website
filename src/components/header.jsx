@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/header.css";
 import Bigicon from "../assets/Svg/font_big.svg";
-import Smallicon from "../assets/Svg/font_small.svg?react";
-import Shareicon from "../assets/Svg/share.svg?react";
-
+import Smallicon from "../assets/Svg/font_small.svg";
+// import Shareicon from "../assets/Svg/share.svg?react";
+import Shareicon from "../assets/Svg/share.svg";
 const header = () => {
   const [sharebtn, setsharebtn] = useState(false);
   const [shareMove, setShareMove] = useState(false);
@@ -53,17 +53,19 @@ const header = () => {
           <ul className="socialList">
             <li>
               <a href="#" className="btnFontSize">
-                <Smallicon className="smallIcon"></Smallicon>
+                <img src={Smallicon} className="smallIcon" alt="" />
+                {/* <Smallicon className="smallIcon"></Smallicon> */}
               </a>
             </li>
             <li>
               <a href="#" className="btnFontSize">
-                <Bigicon className="bigIcon"></Bigicon>
+                <img src={Bigicon} className="bigIcon" alt="" />
               </a>
             </li>
             <li>
               <a href="#" className="btn-share" onClick={sendMove}>
-                <Shareicon className="shareIcon"></Shareicon>
+                <img src={Shareicon} className="shareIcon" alt="" />
+                {/* <Shareicon className="shareIcon"></Shareicon> */}
               </a>
             </li>
           </ul>
