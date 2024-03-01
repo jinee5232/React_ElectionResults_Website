@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Carousel from "../component/carousel";
+import Carousel from "../components/carousel";
 import "../styles/homepage.css";
 
 const Homepage = () => {
