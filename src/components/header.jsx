@@ -80,11 +80,23 @@ const header = () => {
               : ""
           }`}
         >
-          <img onClick={setBack} src={"/public/icon/Facebook.png"} alt="" />
-          <img onClick={setBack} src={"/public/icon/Instagram.png"} alt="" />
-          <img onClick={setBack} src={"/public/icon/TwitterX.png"} alt="" />
-          <img onClick={setBack} src={"/public/icon/LINE.png"} alt="" />
-          <img onClick={setBack} src={"/public/icon/Plurk.png"} alt="" />
+          <img
+            onClick={setBack}
+            src={"../../public/icon/Facebook.png"}
+            alt=""
+          />
+          <img
+            onClick={setBack}
+            src={"../../public/icon/Instagram.png"}
+            alt=""
+          />
+          <img
+            onClick={setBack}
+            src={"../../public/icon/TwitterX.png"}
+            alt=""
+          />
+          <img onClick={setBack} src={"../../public/icon/LINE.png"} alt="" />
+          <img onClick={setBack} src={"../../public/icon/Plurk.png"} alt="" />
         </div>
       </header>
     </div>
