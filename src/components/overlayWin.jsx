@@ -10,10 +10,10 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
     {
       id: 0,
       color: "#D8B9C3",
-      background: "images/tasi_bg.png",
-      CloseIcon: "icon/btn_close_green.png",
-      photo: "images/tasi_photo.png",
-      infoslogan: "images/tasi_slogan.png",
+      background: "../../public/images/tasi_bg.png",
+      CloseIcon: "../../public/icon/btn_close_green.png",
+      photo: "../../public/images/tasi_photo.png",
+      infoslogan: "../../public/images/tasi_slogan.png",
       educational: [
         "英國倫敦政治經濟學院法學博士學位",
         "美國康乃爾大學法學院法學碩士",
@@ -24,8 +24,8 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
         ["行政院副院長", "-- 2006－2007"],
         ["民進黨不分區立法委員", "-- 2004－2006"],
       ],
-      battle: "images/tasi_battle.png",
-      triangle: "icon/tasi_triangle.png",
+      battle: "../../public/images/tasi_battle.png",
+      triangle: "../../public/icon/tasi_triangle.png",
       quotes: [
         [
           <p className="p-1">「</p>,
@@ -88,10 +88,10 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
     {
       id: 1,
       color: "#000095",
-      background: "images/han_bg.png",
-      CloseIcon: "icon/btn_close_blue.png",
-      photo: "images/han_photo.png",
-      infoslogan: "images/han_slogan.png",
+      background: "../../public/images/han_bg.png",
+      CloseIcon: "../../public/icon/btn_close_blue.png",
+      photo: "../../public/images/han_photo.png",
+      infoslogan: "../../public/images/han_slogan.png",
       educational: [
         "北京大學政府管理研究所博士班",
         "國立政治大學法學院東亞研究所法學碩士",
@@ -168,10 +168,10 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
     {
       id: 2,
       color: "orange",
-      background: "images/song_bg.png",
-      CloseIcon: "icon/btn_close_orange.png",
-      photo: "images/song_photo.png",
-      infoslogan: "images/song_slogan.png",
+      background: "../../public/images/song_bg.png",
+      CloseIcon: "../../public/icon/btn_close_orange.png",
+      photo: "../../public/images/song_photo.png",
+      infoslogan: "../../public/images/song_slogan.png",
       educational: [
         "喬治城大學政治學博士",
         "柏克萊加利福尼亞大學政治學碩士",
@@ -183,8 +183,8 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
         ["臺北市政府市政顧問總召集人", "--2014－2021"],
         ["中華民國總統府資政", "--2016－2019"],
       ],
-      battle: "images/song_battle.png",
-      triangle: "icon/song_triangle.png",
+      battle: "../../public/images/song_battle.png",
+      triangle: "../../public/icon/song_triangle.png",
       quotes: [
         [
           <p className="p-1">「自古時勢造</p>,

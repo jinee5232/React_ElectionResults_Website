@@ -47,7 +47,11 @@ const carousel = () => {
   return (
     <div>
       <div className="swiper-container">
-        <img className="left-rect" src="homepage/left_rectangle.png" alt="" />
+        <img
+          className="left-rect"
+          src="../../public/homepage/left_rectangle.png"
+          alt=""
+        />
         {/* Swiper 1 */}
         <Swiper
           effect={"cards"}
@@ -66,13 +70,25 @@ const carousel = () => {
         >
           <div className="swiper-wrapper">
             <SwiperSlide className="swiper-slide sShadow">
-              <img src="homepage/cadicate_T2.png" alt="" onclick="open01()" />
+              <img
+                src="../../public/homepage/cadicate_T2.png"
+                alt=""
+                onclick="open01()"
+              />
             </SwiperSlide>
             <SwiperSlide className="swiper-slide sShadow">
-              <img src="homepage/cadicate_H2.png" alt="" onclick="open02()" />
+              <img
+                src="../../public/homepage/cadicate_H2.png"
+                alt=""
+                onclick="open02()"
+              />
             </SwiperSlide>
             <SwiperSlide className="swiper-slide sShadow">
-              <img src="homepage/cadicate_S2.png" alt="" onclick="open03()" />
+              <img
+                src="../../public/homepage/cadicate_S2.png"
+                alt=""
+                onclick="open03()"
+              />
             </SwiperSlide>
 
             {/* Navigation buttons */}
@@ -92,19 +108,19 @@ const carousel = () => {
 
           <div className="swiper-wrapper">
             <SwiperSlide className="swiper-slide">
-              <img src="homepage/slogan_1.png" alt="" />
+              <img src="../../public/homepage/slogan_1.png" alt="" />
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
-              <img src="homepage/slogan_2.png" alt="" />
+              <img src="../../public/homepage/slogan_2.png" alt="" />
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
-              <img src="homepage/slogan_3.png" alt="" />
+              <img src="../../public/homepage/slogan_3.png" alt="" />
             </SwiperSlide>
           </div>
 
           <img
             className="right-rect"
-            src="homepage/right_rectangle.png"
+            src="../../public/homepage/right_rectangle.png"
             alt=""
           />
         </Swiper>
