@@ -1,0 +1,271 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.select-area {
+  width: 45%;
+  height: 30px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  color: #cccccc;
+  text-align: left;
+  user-select: none;
+  -webkit-touch-callout: none;
+
+  .area-town {
+    position: relative;
+    width: 100%;
+    display: block;
+    background-color: #ffffff;
+    z-index: 1;
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    /* 移除箭頭 */
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("icon/arrow01.png") 90% / 15% no-repeat #fff;
+
+    &:hover {
+      background: darken(#64809c, 2%);
+    }
+
+    &:after {
+      position: absolute;
+      right: 1em;
+      top: 50%;
+      /* transform: translateY(-50%); */
+      font-family: "FontAwesome";
+      content: "\f078";
+      z-index: 10;
+    }
+
+    .city-option {
+      color: brown;
+    }
+  }
+
+  &.is-open {
+    .placeholder:after {
+      content: "\f077";
+    }
+    ul {
+      display: block;
+    }
+  }
+
+  &.select--white {
+    .placeholder {
+      background: #fff;
+      color: #999;
+      &:hover {
+        background: darken(#fff, 2%);
+      }
+    }
+  }
+
+  option {
+    display: block;
+    text-align: left;
+    padding: 0.8em 1em 0.8em 1em;
+    color: #999;
+    cursor: pointer;
+
+    &:hover {
+      background: #4ebbf0;
+      color: #fff;
+    }
+  }
+}
+
+/* ↓右邊的部分↓ */
+
+#searchList {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  margin-right: 5%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* ↓選縣市鄉區↓ */
+#searchBar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.selectList {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  background-color: white;
+  box-shadow: 3px 6px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.selectList > p {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 3.6px;
+  color: #827397;
+  margin: 0 auto;
+  align-self: center;
+}
+/* ↑選縣市鄉區↑ */
+/* ↓更新頻率的字↓ */
+#statusText {
+  width: 87%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+#statusText > p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 2.4px;
+  margin: 0;
+}
+/* ↑更新頻率的字↑ */
+/* ↓那堆長條圖的底和框↓ */
+#sortList {
+  width: 100%;
+  height: 80%;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  background-color: rgba(130, 114, 151, 0.3);
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  overflow: scroll;
+}
+
+#sortList::-webkit-scrollbar {
+  display: none;
+}
+
+.nums-vote {
+  margin: 0 10px;
+}
+
+/* ↑那堆長條圖的底和框↑ */
+
+/* ↓右邊的按鈕區↓ */
+#voteListBtn {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.circleOF {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  display: flex;
+}
+#cSearch {
+  background-image: url("icon/icon_search.png");
+  cursor: pointer;
+}
+#cRefresh {
+  margin-top: 25px;
+  background-image: url("icon/icon_refresh.png");
+  cursor: pointer;
+}
+#cScroll {
+  width: 50px;
+  height: 250px;
+  border-radius: 45px;
+  display: flex;
+  margin-top: 107px;
+  background-color: #ffffff;
+}
+#cInfor {
+  margin-top: 134px;
+  background-image: url("icon/icon_information.png");
+  cursor: pointer;
+}
+/* ↑右邊的按鈕區↑ */
+/* ↑右邊的部分↑ */
+/* ↑中間的部分↑ */
+/* //地圖連結 */
+.mapblue,
+.maporange {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+.mapgreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+
+/* render number of votes */
+.render-vote {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  color: #333333;
+  font-size: 20px;
+  width: 100%;
+  margin: 10px;
+  padding: 2px;
+}
+
+.em-area {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+#voteList {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+#listChart {
+  display: flex;
+  flex-direction: column;
+  margin: 5px auto;
+  height: 70px;
+  width: 90%;
+  padding: 5px 0;
+  h4 {
+    font-size: 28px;
+    left: 0;
+    line-height: 32px;
+  }
+  .nums-vote {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    margin: 5px auto;
+    line-height: 30px;
+    text-align: center;
+    align-items: center;
+    .chart_green {
+      height: 100%;
+      background-color: #1b9431;
+    }
+    .chart_blue {
+      height: 100%;
+      background-color: #000095;
+    }
+    .chart_orange {
+      height: 100%;
+      background-color: #ff6310;
+    }
+  }
+}
+.chart {
+  width: 100%;
+  margin: auto;
+}

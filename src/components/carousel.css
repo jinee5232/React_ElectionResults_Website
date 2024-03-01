@@ -1,0 +1,121 @@
+.swiper-container {
+  position: relative;
+  height: 100%;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.left-rect {
+  position: absolute;
+  width: 150px;
+  height: 118px;
+  top: 5%;
+  /* left: 330px; */
+}
+
+.right-rect {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  right: 0;
+  bottom: 35%;
+  /* left: 923px; */
+}
+
+.mySwiper1,
+.mySwiper2 {
+  width: 600px;
+  height: 380px;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  position: relative;
+}
+
+.mySwiper1 {
+  padding-left: 5%;
+  /* top: 5rem;
+    left: 25rem; */
+}
+
+/* .mySwiper2 {
+    top: 10rem;
+    left: 15rem;
+  } */
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 35px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.sShadow {
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+.swiper-slide > img {
+  width: 655px;
+  /* 物件內圖片保持比例填滿 */
+  object-fit: cover;
+  /* 視覺中心點 */
+  object-position: 50% 50%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+}
+
+.slogan {
+  width: 100%;
+  height: 160px;
+}
+
+.main-section {
+  display: flex;
+  width: 80vw;
+  margin: 0 auto;
+}
+.left-section {
+  height: 100%;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* .left-section {
+    position: relative;
+    top: -2rem;
+  } */
+
+.bgTriangle {
+  position: absolute;
+  top: 262px;
+  left: 95px;
+}
+
+.left-section h1 {
+  color: #1a134f;
+  font-size: 80px;
+  letter-spacing: 15%;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin: 10% auto;
+  text-shadow: 0.05em 0.05em 0.05em #fffefe;
+}
+
+.text {
+  display: inline;
+  color: #000;
+  font-size: 24px;
+  letter-spacing: 15%;
+  font-weight: 600;
+  line-height: 35px;
+  margin: 0;
+}

@@ -1,0 +1,123 @@
+/* html,
+body {
+  position: relative;
+  height: 1080px;
+  width: 1920px;
+  padding: 0; 
+  margin: 0; 
+} */
+
+body {
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+  background-image: url("../assets/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Inter", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  position: relative;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  display: block;
+  height: 10vh;
+  overflow: hidden;
+}
+
+/* Container Style */
+.container {
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+/*格鬥大會*/
+.em-text {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  color: #b70404;
+  font-size: 24px;
+  letter-spacing: 15%;
+  font-weight: 600;
+  line-height: 35px;
+  border: 1px solid #b70404;
+}
+
+.text-container {
+  position: relative;
+  width: 10vw;
+  display: inline-block;
+  margin: auto;
+  text-align: justify;
+  flex-direction: row;
+}
+
+/* 這邊下面是開票啦 */
+#invoicing {
+  position: relative;
+}
+
+#bgSeal {
+  width: 113px;
+  height: 113px;
+  background-image: url(homepage/seal.png);
+  background-size: cover;
+  position: absolute;
+  top: 245px;
+  left: 250px;
+}
+
+#bgArr {
+  width: 56px;
+  height: 63px;
+  background-image: url(homepage/mouse.png);
+  background-size: cover;
+  position: absolute;
+  top: 350px;
+  left: 375px;
+  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.25));
+}
+/* button */
+.check_btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #120817;
+  background-color: #c02424;
+  width: 90%;
+  height: 90px;
+  border-radius: 0.25rem;
+}
+.check_btn:hover span {
+  background-color: #d9a3a3;
+}
+.check_btn:active span {
+  translate: none;
+}
+.check_btn span {
+  width: 82%;
+  height: 50px;
+  display: inherit;
+  font-size: 50px;
+  border-radius: inherit;
+  background-color: #e4b4b4;
+  padding: 1rem 2rem;
+  font-weight: bolder;
+  color: rgb(17, 155, 12);
+  text-align: center;
+  translate: 0.25rem -0.25rem;
+  border: 2px solid #c02424;
+  transition: translate 100ms cubic-bezier(15, 25, 5, 45),
+    background-color 250ms;
+}
