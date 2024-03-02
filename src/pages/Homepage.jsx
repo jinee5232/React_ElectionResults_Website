@@ -19,7 +19,7 @@ const Homepage = () => {
             總統大選
           </h1>
           <div id="invoicing">
-            <Link to="/mappage" className="check_btn">
+            <Link to="mappage" className="check_btn">
               <span>看開票！</span>
             </Link>
           </div>

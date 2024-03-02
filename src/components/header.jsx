@@ -48,7 +48,7 @@ const header = ({ headerToLayout }) => {
           <nav>
             <ul className="menu">
               <li>
-                <Link to="/mappage">
+                <Link to="mappage">
                   <img src={Livephoto} alt="" />
                   開票地圖
                 </Link>
