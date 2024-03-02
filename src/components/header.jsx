@@ -6,6 +6,9 @@ import Smallicon from "../assets/Svg/font_small.svg";
 // import Shareicon from "../assets/Svg/share.svg?react";
 import Shareicon from "../assets/Svg/share.svg";
 const header = () => {
+  const Image = {
+    livephoto: require("icon/headphones2.png"),
+  };
   const [sharebtn, setsharebtn] = useState(false);
   const [shareMove, setShareMove] = useState(false);
   const sendMove = () => {
@@ -35,10 +38,7 @@ const header = () => {
             <ul className="menu">
               <li>
                 <Link to="/mappage">
-                  <img
-                    src={require("../../public/icon/headphones2.png")}
-                    alt=""
-                  />
+                  <img src={Image.livephoto} alt="" />
                   開票地圖
                 </Link>
               </li>
