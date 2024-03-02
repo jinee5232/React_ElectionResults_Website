@@ -54,7 +54,7 @@ const votelist = () => {
         area: area.total,
         song: area.song,
         han: area.han,
-        tasi: area.tsai,
+        tsai: area.tsai,
       }))
     );
     setShowdata(Totaldata);
