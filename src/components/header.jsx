@@ -24,17 +24,6 @@ const header = (headerToLayout) => {
   const setBack = () => {
     setsharebtn(true);
   };
-  const SendOverlay0 = () => {
-    console.log("a");
-  };
-  const SendOverlay1 = () => {
-    // headerToLayout(true, 1);
-    console.log("b");
-  };
-  const SendOverlay2 = () => {
-    // headerToLayout(true, 2);
-    console.log("c");
-  };
 
   return (
     <div>
@@ -59,9 +48,15 @@ const header = (headerToLayout) => {
                   開票地圖
                 </Link>
               </li>
-              <li onClick={SendOverlay0}>辣小英</li>
-              <li onClick={SendOverlay1}>韓導</li>
-              <li onClick={SendOverlay2}>辣個男人</li>
+              <li onClick={() => headerToLayout(true, 0)}>
+                <a>辣小英</a>
+              </li>
+              <li onClick={() => headerToLayout(true, 1)}>
+                <a>韓導</a>
+              </li>
+              <li onClick={() => headerToLayout(true, 2)}>
+                <a>辣個男人</a>
+              </li>
             </ul>
           </nav>
           <ul className="socialList">
