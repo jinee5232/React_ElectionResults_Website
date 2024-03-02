@@ -146,7 +146,7 @@ const votelist = () => {
         <div className="circleOF" id="cSearch">
           <img src={Search} alt="" />
         </div>
-        <div className="circleOF" id="cRefresh" onClick={timeoutId}>
+        <div className="circleOF" id="cRefresh">
           <img src={Refresh} alt="" />
         </div>
         <div id="cScroll"></div>
