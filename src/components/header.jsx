@@ -48,13 +48,13 @@ const header = (headerToLayout) => {
                   開票地圖
                 </Link>
               </li>
-              <li onClick={() => headerToLayout(true, 0)}>
+              <li value={0} onClick={(e) => headerToLayout(true, e)}>
                 <a>辣小英</a>
               </li>
-              <li onClick={() => headerToLayout(true, 1)}>
+              <li value={1} onClick={(e) => headerToLayout(true, e)}>
                 <a>韓導</a>
               </li>
-              <li onClick={() => headerToLayout(true, 2)}>
+              <li value={2} onClick={(e) => headerToLayout(true, e)}>
                 <a>辣個男人</a>
               </li>
             </ul>

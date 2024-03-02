@@ -9,9 +9,9 @@ const Layout = () => {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
   const [inData, setinData] = useState(0);
 
-  const changeState = (childdata, personID) => {
+  const changeState = (childdata, e) => {
     setIsOverlayOpen(childdata);
-    setinData(personID);
+    setinData(e.target.value);
   };
   console.log(isOverlayOpen);
   // onValueChange = { handleValueChange };
