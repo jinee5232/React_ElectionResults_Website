@@ -129,7 +129,7 @@ const votelist = () => {
           {/* ↓一排長條圖塞這裡↓ */}
 
           {showdata.map((item, index) => {
-            const GT = item.tsai;
+            const GT = item[0];
             const Tsai = Number(item.tsai);
             const Han = Number(item.han);
             const Song = Number(item.song);
