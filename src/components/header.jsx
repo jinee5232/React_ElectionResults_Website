@@ -95,7 +95,7 @@ const header = (headerToLayout) => {
           />
           <img
             onClick={setBack}
-            src={"../../public/icon/LINE.png"}
+            src={url("../../public/icon/LINE.png")}
             alt="line"
           />
           <img
