@@ -17,18 +17,17 @@ const votelist = () => {
   const handlecountry = (e) => {
     const getcountryId = e.target.value;
     setTownname(null);
-    if (getcountryId !== "請選擇") {
-      const getStatedata = CITY_URL.find(
-        (country) => country.CityName === getcountryId
-      ).AreaList;
-      const filterData = getStatedata.filter((item) => {
-        if (item.area !== undefined) {
-          return item;
-        }
-      });
-      setTownname(filterData);
-      setShowdata(filterData);
-    }
+
+    const getStatedata = CITY_URL.find(
+      (country) => country.CityName === getcountryId
+    ).AreaList;
+    filterData();
+    const filterData = () => {
+      if (getStatedata !== undefined) {
+        setTownname(getStatedata);
+        setShowdata(getStatedata);
+      }
+    };
 
     document.getElementById("town").value = "請選擇"; // 或者您可以將 '' 替換為您想要的預設值
   };
