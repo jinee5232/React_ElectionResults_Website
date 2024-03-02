@@ -138,6 +138,18 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
             className="overlay_background"
             onClick={() => overlayToLayout(false, 0)}
           ></div>
+          {result.map((item, index) => (
+            <div
+              className="overlay_container"
+              style={{
+                backgroundImage: `linear-gradient(
+                rgba(253, 250, 250, 0.9),
+                rgba(255, 255, 255, 0.9)
+              ),url(${item.background})`,
+              }}
+              key={index}
+            ></div>
+          ))}
         </div>
       ) : null}
     </>
