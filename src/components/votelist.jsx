@@ -43,16 +43,18 @@ const votelist = () => {
     }
   };
   console.log(showdata);
-  const timeoutId = setTimeout(() => {
-    setRefresh((r) => r + 1);
+  const RefreshTime = () => {
     setTimer(
       moment(new Date().getTime()).format("YYYY年MM月DD日 HH時mm分ss秒")
     );
-  }, 30000);
+  };
 
   //時間更新
   useEffect(() => {
-    timeoutId();
+    const timeoutId = setTimeout(() => {
+      setRefresh((r) => r + 1);
+      RefreshTime();
+    }, 30000);
     return () => {
       clearTimeout(timeoutId);
     };
@@ -147,7 +149,7 @@ const votelist = () => {
         <div className="circleOF" id="cSearch">
           <img src={Search} alt="" />
         </div>
-        <div className="circleOF" id="cRefresh" onClick={() => timeoutId}>
+        <div className="circleOF" id="cRefresh" onClick={RefreshTime}>
           <img src={Refresh} alt="" />
         </div>
         <div id="cScroll"></div>
