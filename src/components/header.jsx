@@ -51,13 +51,25 @@ const header = (headerToLayout) => {
                   開票地圖
                 </Link>
               </li>
-              <li onClick={SendOverlay(0)}>
+              <li
+                onClick={() => {
+                  SendOverlay(0);
+                }}
+              >
                 <a>辣小英</a>
               </li>
-              <li onClick={SendOverlay(1)}>
+              <li
+                onClick={() => {
+                  SendOverlay(1);
+                }}
+              >
                 <a>韓導</a>
               </li>
-              <li onClick={SendOverlay(2)}>
+              <li
+                onClick={() => {
+                  SendOverlay(2);
+                }}
+              >
                 <a>辣個男人</a>
               </li>
             </ul>
