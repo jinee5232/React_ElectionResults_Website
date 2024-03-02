@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-// import Bigicon from "../../public/icon/Svg/font_big.svg?react";
+// j
 // import Smallicon from "../../public/icon/Svg/font_small.svg?react";
 // import Shareicon from "../../public/icon/Svg/share.svg?react";
 import Bigicon from "../../public/icon/Svg/font_big.svg";
@@ -292,8 +292,8 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
                 <div className="contain_left">
                   <img className="contain_photo" src={`${item.photo}`} alt="" />
                   <div className="contain_btn">
-                    {/* <Smallicon className="Smallicon btn"></Smallicon>
-                    <Bigicon className="Bigicon btn"></Bigicon>
+                    <Smallicon className="Smallicon btn" />
+                    {/* <Bigicon className="Bigicon btn"></Bigicon>
                     <Shareicon className="Shareicon btn"></Shareicon> */}
                   </div>
                   <img
