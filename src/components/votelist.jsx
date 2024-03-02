@@ -148,7 +148,7 @@ const votelist = () => {
         </div>
         <div id="cScroll"></div>
         <div className="circleOF" id="cInfor">
-          <img src={url("../../public/icon/icon_information.png")} alt="" />
+          <img src="../../public/icon/icon_information.png" alt="" />
         </div>
       </div>
     </div>

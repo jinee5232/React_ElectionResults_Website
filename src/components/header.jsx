@@ -6,12 +6,13 @@ import Smallicon from "../assets/Svg/font_small.svg";
 import Instrgram from "../../public/icon/Instagram.png";
 import Twitter from "../../public/icon/TwitterX.png";
 import Facebook from "/icon/Facebook.png";
+import Livephoto from "icon/headphones2.png";
 // import Shareicon from "../assets/Svg/share.svg?react";
 import Shareicon from "../assets/Svg/share.svg";
 const header = () => {
-  const Image = {
-    livephoto: require("../../public/icon/headphones2.png"),
-  };
+  // const Image = {
+  //   livephoto: require("../../public/icon/headphones2.png"),
+  // };
   const [sharebtn, setsharebtn] = useState(false);
   const [shareMove, setShareMove] = useState(false);
   const sendMove = () => {
@@ -41,7 +42,7 @@ const header = () => {
             <ul className="menu">
               <li>
                 <Link to="/mappage">
-                  <img src={Image.livephoto} alt="" />
+                  <img src={Livephoto} alt="" />
                   開票地圖
                 </Link>
               </li>
