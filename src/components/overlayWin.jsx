@@ -160,6 +160,11 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
                 {/* 左區塊開始 */}
                 <div className="contain_left">
                   <img className="contain_photo" src={`${item.photo}`} alt="" />
+                  <div className="contain_btn">
+                    <Smallicon className="Smallicon btn"></Smallicon>
+                    <Bigicon className="Bigicon btn"></Bigicon>
+                    <Shareicon className="Shareicon btn"></Shareicon>
+                  </div>
 
                   <div className="content_history">
                     <h4>學歷</h4>
