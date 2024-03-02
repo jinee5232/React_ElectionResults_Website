@@ -136,7 +136,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
         <div className="overlay" id="intr_window">
           <div
             className="overlay_background"
-            onClick={overlayToLayout(false, 0)}
+            onClick={() => overlayToLayout(false, 0)}
           ></div>
         </div>
       ) : null}
