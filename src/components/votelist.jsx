@@ -133,7 +133,7 @@ const votelist = () => {
             const Tsai = Number(item.tsai);
             const Han = Number(item.han);
             const Song = Number(item.song);
-            console.log(Tasi, Han, Song);
+            console.log(Tsai, Han, Song);
             const a = ((Tsai / (Tsai + Han + Song)) * 100).toFixed(1) + "%";
             const b = ((Han / (Tsai + Han + Song)) * 100).toFixed(1) + "%";
             const c = ((Song / (Tsai + Han + Song)) * 100).toFixed(1) + "%";
