@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import moment from "moment";
 import "../styles/votelist.css";
 import CITY_URL from "../assets/json/area_vote.json";
+import Information from "../../public/icon/icon_information.png";
+import Refresh from "../../public/icon/icon_refresh";
+import Search from "../../public/icon/icon_search.png";
 
 const votelist = () => {
   const [timer, setTimer] = useState(
@@ -141,14 +144,14 @@ const votelist = () => {
       {/* ↓右邊那一列按鈕↓ */}
       <div id="voteListBtn">
         <div className="circleOF" id="cSearch">
-          <img src="/icon/icon_search.png" alt="" />
+          <img src={Search} alt="" />
         </div>
-        <div className="circleOF" id="cRefresh">
-          <img src="/icon/icon_refresh.png" alt="" />
+        <div className="circleOF" id="cRefresh" onClick={() => timeoutId}>
+          <img src={Refresh} alt="" />
         </div>
         <div id="cScroll"></div>
         <div className="circleOF" id="cInfor">
-          <img src="../../public/icon/icon_information.png" alt="" />
+          <img src={Information} alt="" />
         </div>
       </div>
     </div>
