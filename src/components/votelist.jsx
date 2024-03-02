@@ -13,7 +13,7 @@ const votelist = () => {
   );
   const [refresh, setRefresh] = useState(0);
   const [townname, setTownname] = useState([]);
-  const [showdata, setShowdata] = useState([]);
+  const [showdata, setShowdata] = useState([TotalData]);
   const handlecountry = (e) => {
     const getcountryId = e.target.value;
     const getStatedata = CITY_URL.find(
@@ -33,6 +33,9 @@ const votelist = () => {
       return item;
     }
   });
+  const TotalData = CITY_URL.map((city) =>
+    city.AreaList.map((area) => area.total)
+  );
 
   const handletown = (e) => {
     const gettownId = e.target.value;
