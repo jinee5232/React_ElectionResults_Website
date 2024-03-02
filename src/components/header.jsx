@@ -17,12 +17,18 @@ const header = (headerToLayout) => {
   // };
   const [sharebtn, setsharebtn] = useState(false);
   const [shareMove, setShareMove] = useState(false);
+  const [ClickTouch, setClickTouch] = useState(0);
   const sendMove = () => {
     setShareMove(true);
     setsharebtn(false);
   };
   const setBack = () => {
     setsharebtn(true);
+  };
+  const setTouch = (value) => {
+    setClickTouch(value);
+    headerToLayout(ClickTouch);
+    console.log(value);
   };
 
   return (
@@ -50,21 +56,21 @@ const header = (headerToLayout) => {
               </li>
               <li
                 onClick={() => {
-                  headerToLayout(true, 0);
+                  setTouch(0);
                 }}
               >
                 <a>辣小英</a>
               </li>
               <li
                 onClick={() => {
-                  headerToLayout(true, 1);
+                  setTouch(1);
                 }}
               >
                 <a>韓導</a>
               </li>
               <li
                 onClick={() => {
-                  headerToLayout(true, 2);
+                  setTouch(2);
                 }}
               >
                 <a>辣個男人</a>
