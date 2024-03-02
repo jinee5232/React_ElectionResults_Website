@@ -51,7 +51,7 @@ const votelist = () => {
   useEffect(() => {
     const Totaldata = CITY_URL.map((city) =>
       city.AreaList.filter((area) => area.total).map((area) => ({
-        total: area.total,
+        area: area.total,
         song: area.song,
         han: area.han,
         tasi: area.tsai,
@@ -139,7 +139,7 @@ const votelist = () => {
             console.log(a, b, c);
             return (
               <div id="listChart">
-                <h4 key={index}>{item[0]}</h4>
+                <h4 key={index}>{item.area}</h4>
                 <div className="nums-vote" id="nums-vote">
                   <div
                     className="chart_green"
