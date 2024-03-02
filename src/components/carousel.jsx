@@ -8,8 +8,10 @@ import "swiper/css/navigation";
 import "../styles/carousel.css";
 import "swiper/css/pagination";
 import left_rectangle from "../assets/homepage/left_rectangle.png";
+import right_rectangle from "../assets/homepage/right_rectangle.png";
 import cadicate_T2 from "../assets/homepage/cadicate_T2.png";
 import cadicate_H2 from "../assets/homepage/cadicate_H2.png";
+import cadicate_S2 from "../assets/homepage/cadicate_S2.png";
 import slogan_1 from "../assets/homepage/slogan_1.png";
 import slogan_2 from "../assets/homepage/slogan_2.png";
 import slogan_3 from "../assets/homepage/slogan_3.png";
@@ -78,11 +80,7 @@ const carousel = () => {
               <img src={cadicate_H2} alt="" onclick="open02()" />
             </SwiperSlide>
             <SwiperSlide className="swiper-slide sShadow">
-              <img
-                src="../assets/homepage/cadicate_S2.png"
-                alt=""
-                onclick="open03()"
-              />
+              <img src={cadicate_S2} alt="" onclick="open03()" />
             </SwiperSlide>
 
             {/* Navigation buttons */}
@@ -112,11 +110,7 @@ const carousel = () => {
             </SwiperSlide>
           </div>
 
-          <img
-            className="right-rect"
-            src="../assets/homepage/right_rectangle.png"
-            alt=""
-          />
+          <img className="right-rect" src={right_rectangle} alt="" />
         </Swiper>
       </div>
     </div>
