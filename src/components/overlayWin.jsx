@@ -131,7 +131,16 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
 
   const result = OverlayData.filter((item) => item.id === inData);
   return (
-    <>{isOpen ? <div className="overlay" id="intr_window"></div> : null}</>
+    <>
+      {isOpen ? (
+        <div className="overlay" id="intr_window">
+          <div
+            className="overlay_background"
+            onClick={overlayToLayout(false, 0)}
+          ></div>
+        </div>
+      ) : null}
+    </>
   );
 };
 
