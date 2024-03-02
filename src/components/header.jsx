@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 import "../styles/header.css";
 import Bigicon from "../assets/Svg/font_big.svg";
 import Smallicon from "../assets/Svg/font_small.svg";
+import Instrgram from "../../public/icon/Instagram.png";
+import Twitter from "../../public/icon/TwitterX.png";
+import Facebook from "/icon/Facebook.png";
 // import Shareicon from "../assets/Svg/share.svg?react";
 import Shareicon from "../assets/Svg/share.svg";
 const header = () => {
   const Image = {
-    livephoto: require("icon/headphones2.png"),
+    livephoto: require("../../public/icon/headphones2.png"),
   };
   const [sharebtn, setsharebtn] = useState(false);
   const [shareMove, setShareMove] = useState(false);
@@ -85,17 +88,9 @@ const header = () => {
               : ""
           }`}
         >
-          <img onClick={setBack} src="/icon/Facebook.png" alt="facebook" />
-          <img
-            onClick={setBack}
-            src="../../public/icon/Instagram.png"
-            alt="instagram"
-          />
-          <img
-            onClick={setBack}
-            src="../../public/icon/TwitterX.png"
-            alt="twitter"
-          />
+          <img onClick={setBack} src={Facebook} alt="facebook" />
+          <img onClick={setBack} src={Instrgram} alt="instagram" />
+          <img onClick={setBack} src={Twitter} alt="twitter" />
           <img onClick={setBack} src="../../public/icon/LINE.png" alt="line" />
           <img
             onClick={setBack}
