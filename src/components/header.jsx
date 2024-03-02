@@ -24,8 +24,14 @@ const header = (headerToLayout) => {
   const setBack = () => {
     setsharebtn(true);
   };
-  const SendOverlay = (value) => {
-    headerToLayout(true, value);
+  const SendOverlay0 = () => {
+    headerToLayout(true, 0);
+  };
+  const SendOverlay1 = () => {
+    headerToLayout(true, 1);
+  };
+  const SendOverlay2 = () => {
+    headerToLayout(true, 2);
   };
 
   return (
@@ -51,25 +57,13 @@ const header = (headerToLayout) => {
                   開票地圖
                 </Link>
               </li>
-              <li
-                onClick={() => {
-                  SendOverlay(0);
-                }}
-              >
+              <li onClick={SendOverlay0}>
                 <a>辣小英</a>
               </li>
-              <li
-                onClick={() => {
-                  SendOverlay(1);
-                }}
-              >
+              <li onClick={SendOverlay1}>
                 <a>韓導</a>
               </li>
-              <li
-                onClick={() => {
-                  SendOverlay(2);
-                }}
-              >
+              <li onClick={SendOverlay2}>
                 <a>辣個男人</a>
               </li>
             </ul>
