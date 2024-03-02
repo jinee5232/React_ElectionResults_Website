@@ -31,7 +31,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
     {
       id: 0,
       color: "#D8B9C3",
-      background: "../../public/images/tasi_bg.png",
+      background: BGtasi,
       CloseIcon: { CloseGbtn },
       photo: { PTtasi },
       infoslogan: { SLtasi },
