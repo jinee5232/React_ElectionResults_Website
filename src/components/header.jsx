@@ -88,22 +88,18 @@ const header = () => {
           <img onClick={setBack} src="/icon/Facebook.png" alt="facebook" />
           <img
             onClick={setBack}
-            src={require("../../public/icon/Instagram.png")}
+            src="../../public/icon/Instagram.png"
             alt="instagram"
           />
           <img
             onClick={setBack}
-            src={require("../../public/icon/TwitterX.png")}
+            src="../../public/icon/TwitterX.png"
             alt="twitter"
           />
+          <img onClick={setBack} src="../../public/icon/LINE.png" alt="line" />
           <img
             onClick={setBack}
-            src={require("../../public/icon/LINE.png")}
-            alt="line"
-          />
-          <img
-            onClick={setBack}
-            src={require("../../public/icon/Plurk.png")}
+            src="../../public/icon/Plurk.png"
             alt="plurk"
           />
         </div>
