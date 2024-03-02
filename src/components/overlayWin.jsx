@@ -31,7 +31,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
     {
       id: 0,
       color: "#D8B9C3",
-      background: { BGtasi },
+      background: "../../public/images/tasi_bg.png",
       CloseIcon: { CloseGbtn },
       photo: { PTtasi },
       infoslogan: { SLtasi },
@@ -143,9 +143,9 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
               className="overlay_container"
               style={{
                 backgroundImage: `linear-gradient(
-                rgba(253, 250, 250, 0.9),
-                rgba(255, 255, 255, 0.9)
-              ),url(${item.background})`,
+                  rgba(253, 250, 250, 0.9),
+                  rgba(255, 255, 255, 0.9)
+                ), url(${item.background})`,
               }}
               key={index}
             ></div>
