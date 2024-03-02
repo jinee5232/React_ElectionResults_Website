@@ -50,7 +50,12 @@ const votelist = () => {
   };
   useEffect(() => {
     const Totaldata = CITY_URL.map((city) =>
-      city.AreaList.filter((area) => area.total).map((area) => area.total)
+      city.AreaList.filter((area) => area.total).map((area) => ({
+        total: area.total,
+        song: area.song,
+        han: area.han,
+        tasi: area.tsai,
+      }))
     );
     setShowdata(Totaldata);
   }, []);
