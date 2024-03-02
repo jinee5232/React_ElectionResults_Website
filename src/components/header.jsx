@@ -11,13 +11,13 @@ import Line from "../../public/icon/LINE.png";
 import Plurk from "../../public/icon/Plurk.png";
 // import Shareicon from "../assets/Svg/share.svg?react";
 import Shareicon from "../assets/Svg/share.svg";
-const header = (headerToLayout) => {
+const header = ({ headerToLayout }) => {
   // const Image = {
   //   livephoto: require("../../public/icon/headphones2.png"),
   // };
   const [sharebtn, setsharebtn] = useState(false);
   const [shareMove, setShareMove] = useState(false);
-  const [ClickTouch, setClickTouch] = useState(0);
+  // const [ClickTouch, setClickTouch] = useState(0);
   const sendMove = () => {
     setShareMove(true);
     setsharebtn(false);
@@ -25,11 +25,11 @@ const header = (headerToLayout) => {
   const setBack = () => {
     setsharebtn(true);
   };
-  const setTouch = (value) => {
-    setClickTouch(value);
-    headerToLayout(ClickTouch);
-    console.log(value);
-  };
+  // const setTouch = (value) => {
+  //   setClickTouch(value);
+  //   headerToLayout(ClickTouch);
+  //   console.log(value);
+  // };
 
   return (
     <div>
@@ -54,13 +54,13 @@ const header = (headerToLayout) => {
                   開票地圖
                 </Link>
               </li>
-              <li onClick={setTouch(0)}>
+              <li onClick={headerToLayout(true, 0)}>
                 <a>辣小英</a>
               </li>
-              <li onClick={setTouch(1)}>
+              <li onClick={headerToLayout(true, 1)}>
                 <a>韓導</a>
               </li>
-              <li onClick={setTouch(2)}>
+              <li onClick={headerToLayout(true, 2)}>
                 <a>辣個男人</a>
               </li>
             </ul>
