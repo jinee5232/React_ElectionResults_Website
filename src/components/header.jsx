@@ -5,7 +5,7 @@ import Bigicon from "../assets/Svg/font_big.svg";
 import Smallicon from "../assets/Svg/font_small.svg";
 // import Shareicon from "../assets/Svg/share.svg?react";
 import Shareicon from "../assets/Svg/share.svg";
-const header = (headerToLayout) => {
+const header = () => {
   const [sharebtn, setsharebtn] = useState(false);
   const [shareMove, setShareMove] = useState(false);
   const sendMove = () => {
