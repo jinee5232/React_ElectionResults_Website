@@ -24,9 +24,8 @@ const header = (headerToLayout) => {
   const setBack = () => {
     setsharebtn(true);
   };
-  const SendOverlay = (e) => {
-    const Sendvalue = e.target.value;
-    headerToLayout(true, Sendvalue);
+  const SendOverlay = (value) => {
+    headerToLayout(true, value);
   };
 
   return (
