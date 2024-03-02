@@ -176,7 +176,7 @@ header .wrap {
     left: 10px;
   }
 }
-.menu a {
+.menu li {
   position: relative;
   display: block;
   padding: 10px 0px;
@@ -185,18 +185,18 @@ header .wrap {
   font-size: 28px;
   font-weight: 600;
 }
-.menu a.current,
-.menu a:hover {
+.menu li.current,
+.menu li:hover {
   /* color: #827397; */
   color: #b70404;
 }
-.menu a.current:before,
-.menu a:hover:before {
+.menu li.current:before,
+.menu li:hover:before {
   right: auto;
   left: 0;
   width: 100%;
 }
-.menu a:before {
+.menu li:before {
   content: "";
   position: absolute;
   right: 0;
