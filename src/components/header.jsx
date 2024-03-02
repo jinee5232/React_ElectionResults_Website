@@ -9,7 +9,7 @@ import Facebook from "/icon/Facebook.png";
 import Livephoto from "/icon/headphones2.png";
 // import Shareicon from "../assets/Svg/share.svg?react";
 import Shareicon from "../assets/Svg/share.svg";
-const header = () => {
+const header = (headerToLayout) => {
   // const Image = {
   //   livephoto: require("../../public/icon/headphones2.png"),
   // };
