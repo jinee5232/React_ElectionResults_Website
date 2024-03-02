@@ -282,7 +282,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
             >
               <div className="overlay_controls">
                 <img
-                  src={item.CloseIcon}
+                  src={`${item.CloseIcon}`}
                   alt="close"
                   onClick={() => overlayToLayout(false)}
                 />
@@ -290,13 +290,17 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
               <div className="overlay_contain">
                 {/* 左區塊開始 */}
                 <div className="contain_left">
-                  <img className="contain_photo" src={item.photo} alt="" />
+                  <img className="contain_photo" src={`${item.photo}`} alt="" />
                   <div className="contain_btn">
                     <Smallicon className="Smallicon btn"></Smallicon>
                     <Bigicon className="Bigicon btn"></Bigicon>
                     <Shareicon className="Shareicon btn"></Shareicon>
                   </div>
-                  <img className="contain_photo" src={item.infoslogan} alt="" />
+                  <img
+                    className="contain_photo"
+                    src={`${item.infoslogan}`}
+                    alt=""
+                  />
                   <div className="content_history">
                     <h4>學歷</h4>
                     {item.educational.map((editem, index) => (
@@ -332,7 +336,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
 
                   <img
                     className="battle_photo"
-                    src={item.battle}
+                    src={`${item.battle}`}
                     alt="battle_tasi"
                   />
                 </div>
