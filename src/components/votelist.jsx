@@ -52,14 +52,14 @@ const votelist = () => {
     const Totaldata = CITY_URL.map((city) =>
       city.AreaList.find((area) => area.total)
     ).filter(Boolean);
-    // const Totaldata2 = Totaldata.map((item) => ({
-    //   area: item.total,
-    //   song: item.song,
-    //   han: item.han,
-    //   tsai: item.tsai,
-    // }));
-    setShowdata(Totaldata);
-    console.log(Totaldata);
+    const Totaldata2 = Totaldata.map((item) => ({
+      area: item.total,
+      song: item.song,
+      han: item.han,
+      tsai: item.tsai,
+    }));
+    setShowdata(Totaldata2);
+    console.log(Totaldata2);
     // console.log(Totaldata2);
   }, []);
   //時間更新
