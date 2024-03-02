@@ -35,7 +35,7 @@ const header = (headerToLayout) => {
             <ul className="menu">
               <li>
                 <Link to="/mappage">
-                  <img src="../../docs/icon/headphones2.png" alt="" />
+                  <img src="../../public/icon/headphones2.png" alt="" />
                   開票地圖
                 </Link>
               </li>
@@ -90,11 +90,19 @@ const header = (headerToLayout) => {
           />
           <img
             onClick={setBack}
-            src="../../docs/icon/TwitterX.png"
+            src="../../public/icon/TwitterX.png"
             alt="twitter"
           />
-          <img onClick={setBack} src={"../../docs/icon/LINE.png"} alt="line" />
-          <img onClick={setBack} src="../../docs/icon/Plurk.png" alt="plurk" />
+          <img
+            onClick={setBack}
+            src={"../../public/icon/LINE.png"}
+            alt="line"
+          />
+          <img
+            onClick={setBack}
+            src="../../public/icon/Plurk.png"
+            alt="plurk"
+          />
         </div>
       </header>
     </div>
