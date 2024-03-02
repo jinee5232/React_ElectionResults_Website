@@ -66,19 +66,19 @@ const header = ({ headerToLayout }) => {
           </nav>
           <ul className="socialList">
             <li>
-              <a href="#" className="btnFontSize">
+              <a className="btnFontSize">
                 {/* <img src={Smallicon} className="smallIcon" alt="" /> */}
                 <Smallicon className="smallIcon"></Smallicon>
               </a>
             </li>
             <li>
-              <a href="#" className="btnFontSize">
+              <a className="btnFontSize">
                 {/* <img src={Bigicon} className="bigIcon" alt="" /> */}
                 <Bigicon className="bigIcon"></Bigicon>
               </a>
             </li>
             <li>
-              <a href="#" className="btn-share" onClick={sendMove}>
+              <a className="btn-share" onClick={sendMove}>
                 {/* <img src={Shareicon} className="shareIcon" alt="" /> */}
                 <Shareicon className="shareIcon"></Shareicon>
               </a>
