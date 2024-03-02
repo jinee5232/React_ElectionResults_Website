@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
-// j
-// import Smallicon from "../../public/icon/Svg/font_small.svg?react";
-// import Shareicon from "../../public/icon/Svg/share.svg?react";
-import Bigicon from "../../public/icon/Svg/font_big.svg";
 import Smallicon from "../../public/icon/Svg/font_small.svg?react";
-import Shareicon from "../../public/icon/Svg/share.svg";
+import Shareicon from "../../public/icon/Svg/share.svg?react";
+import Smallicon from "../../public/icon/Svg/font_small.svg?react";
 import "../styles/overlay.css";
 import CloseGbtn from "../../public/icon/btn_close_green.png";
 import CloseBbtn from "../../public/icon/btn_close_blue.png";
@@ -292,8 +289,8 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
                   <img className="contain_photo" src={`${item.photo}`} alt="" />
                   <div className="contain_btn">
                     <Smallicon className="Smallicon btn" />
-                    {/* <Bigicon className="Bigicon btn"></Bigicon>
-                    <Shareicon className="Shareicon btn"></Shareicon> */}
+                    <Bigicon className="Bigicon btn"></Bigicon>
+                    <Shareicon className="Shareicon btn"></Shareicon>
                   </div>
                   <img
                     className="contain_photo"

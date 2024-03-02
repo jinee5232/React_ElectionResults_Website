@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/header.css";
-import Bigicon from "../assets/Svg/font_big.svg";
-import Smallicon from "../assets/Svg/font_small.svg";
+import Bigicon from "../assets/Svg/font_big.svg?react";
+import Smallicon from "../assets/Svg/font_small.svg?react";
 import Instrgram from "../../public/icon/Instagram.png";
 import Twitter from "../../public/icon/TwitterX.png";
 import Facebook from "/icon/Facebook.png";
 import Livephoto from "/icon/headphones2.png";
 import Line from "../../public/icon/LINE.png";
 import Plurk from "../../public/icon/Plurk.png";
-// import Shareicon from "../assets/Svg/share.svg?react";
-import Shareicon from "../assets/Svg/share.svg";
+import Shareicon from "../assets/Svg/share.svg?react";
 const header = ({ headerToLayout }) => {
   // const Image = {
   //   livephoto: require("../../public/icon/headphones2.png"),
@@ -68,19 +67,20 @@ const header = ({ headerToLayout }) => {
           <ul className="socialList">
             <li>
               <a href="#" className="btnFontSize">
-                <img src={Smallicon} className="smallIcon" alt="" />
-                {/* <Smallicon className="smallIcon"></Smallicon> */}
+                {/* <img src={Smallicon} className="smallIcon" alt="" /> */}
+                <Smallicon className="smallIcon"></Smallicon>
               </a>
             </li>
             <li>
               <a href="#" className="btnFontSize">
-                <img src={Bigicon} className="bigIcon" alt="" />
+                {/* <img src={Bigicon} className="bigIcon" alt="" /> */}
+                <Bigicon className="bigIcon"></Bigicon>
               </a>
             </li>
             <li>
               <a href="#" className="btn-share" onClick={sendMove}>
-                <img src={Shareicon} className="shareIcon" alt="" />
-                {/* <Shareicon className="shareIcon"></Shareicon> */}
+                {/* <img src={Shareicon} className="shareIcon" alt="" /> */}
+                <Shareicon className="shareIcon"></Shareicon>
               </a>
             </li>
           </ul>
