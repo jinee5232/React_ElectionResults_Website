@@ -16,6 +16,7 @@ const votelist = () => {
   const [showdata, setShowdata] = useState([]);
   const handlecountry = (e) => {
     const getcountryId = e.target.value;
+    setTownname(null);
     const getStatedata = CITY_URL.find(
       (country) => country.CityName === getcountryId
     ).AreaList;
