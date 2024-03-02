@@ -33,7 +33,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
       color: "#D8B9C3",
       background: BGtasi,
       CloseIcon: CloseGbtn,
-      photo: "{PTtasi}",
+      photo: `{${PTtasi}}`,
       infoslogan: SLtasi,
       educational: [
         "英國倫敦政治經濟學院法學博士學位",
