@@ -54,26 +54,14 @@ const header = (headerToLayout) => {
                   開票地圖
                 </Link>
               </li>
-              <li
-                onClick={() => {
-                  setTouch(0);
-                }}
-              >
-                <a>辣小英</a>
+              <li>
+                <a onClick={setTouch(0)}>辣小英</a>
               </li>
-              <li
-                onClick={() => {
-                  setTouch(1);
-                }}
-              >
-                <a>韓導</a>
+              <li>
+                <a onClick={setTouch(1)}>韓導</a>
               </li>
-              <li
-                onClick={() => {
-                  setTouch(2);
-                }}
-              >
-                <a>辣個男人</a>
+              <li>
+                <a onClick={setTouch(2)}>辣個男人</a>
               </li>
             </ul>
           </nav>
