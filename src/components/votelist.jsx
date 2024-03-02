@@ -21,13 +21,15 @@ const votelist = () => {
     const getStatedata = CITY_URL.find(
       (country) => country.CityName === getcountryId
     ).AreaList;
-    filterData();
-    const filterData = () => {
-      if (getStatedata !== undefined) {
-        setTownname(getStatedata);
-        setShowdata(getStatedata);
-      }
-    };
+    if (getStatedata !== undefined) {
+      const filterData = getStatedata.filter((item) => {
+        if (item.area !== undefined) {
+          return item;
+        }
+      });
+      setTownname(filterData);
+      setShowdata(filterData);
+    }
 
     document.getElementById("town").value = "請選擇"; // 或者您可以將 '' 替換為您想要的預設值
   };
