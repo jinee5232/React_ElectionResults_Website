@@ -50,14 +50,16 @@ const votelist = () => {
   };
   useEffect(() => {
     const Totaldata = CITY_URL.map((city) =>
-      city.AreaList.filter((area) => area.total).map((item) => ({
-        area: item.total,
-        song: item.song,
-        han: item.han,
-        tsai: item.tsai,
-      }))
+      city.AreaList.filter((area) => area.total)
     );
-    setShowdata(Totaldata);
+    const Totaldata2 = Totaldata.map((item) => ({
+      area: item.total,
+      song: item.song,
+      han: item.han,
+      tsai: item.tsai,
+    }));
+    console.log(Totaldata);
+    console.log(Totaldata2);
   }, []);
   //時間更新
   useEffect(() => {
