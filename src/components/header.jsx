@@ -39,13 +39,13 @@ const header = (headerToLayout) => {
                   開票地圖
                 </Link>
               </li>
-              <li onClick={() => headerToLayout(true, 0)}>
+              <li onClick={headerToLayout(true, 0)}>
                 <a>辣小英</a>
               </li>
-              <li onClick={() => headerToLayout(true, 1)}>
+              <li onClick={headerToLayout(true, 1)}>
                 <a>韓導</a>
               </li>
-              <li onClick={() => headerToLayout(true, 2)}>
+              <li onClick={headerToLayout(true, 2)}>
                 <a>辣個男人</a>
               </li>
             </ul>
@@ -82,11 +82,7 @@ const header = (headerToLayout) => {
               : ""
           }`}
         >
-          <img
-            onClick={setBack}
-            src="%PUBLIC_URL%/icon/Facebook.png"
-            alt="facebook"
-          />
+          <img onClick={setBack} src="/icon/Facebook.png" alt="facebook" />
           <img
             onClick={setBack}
             src="%PUBLIC_URL%/icon/Instagram.png"
