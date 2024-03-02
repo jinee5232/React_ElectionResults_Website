@@ -49,7 +49,7 @@ const carousel = () => {
       <div className="swiper-container">
         <img
           className="left-rect"
-          src="../assets/homepage/left_rectangle.png"
+          src="/assets/homepage/left_rectangle.png"
           alt=""
         />
         {/* Swiper 1 */}
