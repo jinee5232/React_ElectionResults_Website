@@ -148,7 +148,45 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
                 ), url(${item.background})`,
               }}
               key={index}
-            ></div>
+            >
+              <div className="overlay_controls">
+                <img
+                  src={`${item.CloseIcon}`}
+                  alt="close"
+                  onClick={() => overlayToLayout(false)}
+                />
+              </div>
+              <div className="overlay_contain">
+                {/* 左區塊開始 */}
+                <div className="contain_left">
+                  <img className="contain_photo" src={`${item.photo}`} alt="" />
+                  <div className="contain_btn">
+                    <Smallicon className="Smallicon btn"></Smallicon>
+                    <Bigicon className="Bigicon btn"></Bigicon>
+                    <Shareicon className="Shareicon btn"></Shareicon>
+                  </div>
+                  <img
+                    className="contain_photo"
+                    src={`${item.infoslogan}`}
+                    alt=""
+                  />
+                  <div className="content_history">
+                    <h4>學歷</h4>
+                    {item.educational.map((editem, index) => (
+                      <p key={index}>{editem}</p>
+                    ))}
+                    <h4>經歷</h4>
+                    {item.experience.map((exitem, index2) => (
+                      <>
+                        <p key={index2}>{exitem[0]}</p>
+                        <p className="p_year">{exitem[1]}</p>
+                      </>
+                    ))}
+                  </div>
+                </div>
+                {/* 右區塊開始 */}
+              </div>
+            </div>
           ))}
         </div>
       ) : null}
