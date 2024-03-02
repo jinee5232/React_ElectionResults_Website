@@ -27,6 +27,7 @@ const votelist = () => {
     });
     setTownname(filterData);
     setShowdata(filterData);
+    document.getElementById("town").value = ""; // 或者您可以將 '' 替換為您想要的預設值
   };
   //過濾掉undefined
   const filterData = townname.filter((item) => {
