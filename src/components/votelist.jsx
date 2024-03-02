@@ -50,17 +50,24 @@ const votelist = () => {
   };
   useEffect(() => {
     const Totaldata = CITY_URL.map((city) =>
-      city.AreaList.filter((area) => area.total)
+      city.AreaList.map((area) =>
+        area.AreaList.map((item) => ({
+          area: item.total,
+          song: item.song,
+          han: item.han,
+          tsai: item.tsai,
+        }))
+      )
     );
-    const Totaldata2 = Totaldata.map((item) => ({
-      area: item.total,
-      song: item.song,
-      han: item.han,
-      tsai: item.tsai,
-    }));
+    // const Totaldata2 = Totaldata.map((item) => ({
+    //   area: item.total,
+    //   song: item.song,
+    //   han: item.han,
+    //   tsai: item.tsai,
+    // }));
     setShowdata(Totaldata);
     console.log(Totaldata);
-    console.log(Totaldata2);
+    // console.log(Totaldata2);
   }, []);
   //時間更新
   useEffect(() => {
