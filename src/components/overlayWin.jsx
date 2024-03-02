@@ -81,7 +81,17 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
       ],
       battle: BThan,
       triangle: TGhan,
-      quotes: [["「貨賣得出去，人跟錢進得來，高雄", "blue", "發大財", "！」"]],
+      quotes: [
+        [
+          <p class="p-1">「</p>,
+          <div class="em-text red">中國</div>,
+          <p class="p-2">只要</p>,
+          <div className="em-text green">不擋</div>,
+          <p class="p-2">，就是對我們最大的</p>,
+          <div class="em-text green">幫助</div>,
+          <p class="p-2">。」</p>,
+        ],
+      ],
     },
     {
       id: 2,
@@ -192,38 +202,14 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
                   </div>
                   <div className="contain_slogan">
                     {item.quotes.map((quitem, index) => (
-                      <div key={index}>
-                        {quitem.map((COitem, index) => (
-                          <div
-                            className="slogan_triangle"
-                            key={index}
-                            style={{
-                              backgroundImage: `url(${item.triangle})`,
-                            }}
-                          >
-                            <p className="p-1">{COitem[0]}</p>
-                            <div className={`em-text ${COitem[1]}`}>
-                              {COitem[2]}
-                            </div>
-                            <p className="p-2">{COitem[3]}</p>,
-                            <div className={`em-text ${COitem[4]}`}>
-                              {COitem[5]}
-                            </div>
-                            <p className="p-2">{COitem[6]}</p>,
-                            <div className={`em-text ${COitem[7]}`}>
-                              {COitem[8]}
-                            </div>
-                            <p className="p-2">{COitem[9]}</p>,
-                            <div className={`em-text ${COitem[10]}`}>
-                              {COitem[11]}
-                            </div>
-                            <p className="p-2">{COitem[12]}</p>,
-                            <div className={`em-text ${COitem[13]}`}>
-                              {COitem[14]}
-                            </div>
-                            <p className="p-2">{COitem[15]}</p>
-                          </div>
-                        ))}
+                      <div
+                        key={index}
+                        className="slogan_triangle"
+                        style={{
+                          backgroundImage: `url(${item.triangle})`,
+                        }}
+                      >
+                        {quitem}
                       </div>
                     ))}
                   </div>
