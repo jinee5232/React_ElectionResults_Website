@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-import Bigicon from "../../public/icon/Svg/font_big.svg?react";
-import Smallicon from "../../public/icon/Svg/font_small.svg?react";
-import Shareicon from "../../public/icon/Svg/share.svg?react";
+// import Bigicon from "../../public/icon/Svg/font_big.svg?react";
+// import Smallicon from "../../public/icon/Svg/font_small.svg?react";
+// import Shareicon from "../../public/icon/Svg/share.svg?react";
+import Bigicon from "../../public/icon/Svg/font_big.svg";
+import Smallicon from "../../public/icon/Svg/font_small.svg";
+import Shareicon from "../../public/icon/Svg/share.svg";
 import "../styles/overlay.css";
 import CloseGbtn from "../../public/icon/btn_close_green.png";
 import CloseBbtn from "../../public/icon/btn_close_blue.png";
@@ -13,6 +16,15 @@ import SLtasi from "../../public/images/tasi_slogan.png";
 import BTtasi from "../../public/images/tasi_battle.png";
 import TGtasi from "../../public/icon/tasi_triangle.png";
 import BGhan from "../../public/images/han_bg.png";
+import PThan from "../../public/images/han_photo.png";
+import SLhan from "../../public/images/han_slogan.png";
+import BThan from "images/han_battle.png";
+import TGhan from "icon/han_triangle.png";
+import BGsong from "../../public/images/song_bg.png";
+import PTsong from "../../public/images/song_photo.png";
+import SLsong from "../../public/images/song_slogan.png";
+import BTsong from "../../public/images/song_battle.png";
+import TGsong from "../../public/icon/song_triangle.png";
 
 const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
   const OverlayData = [
@@ -99,8 +111,8 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
       color: "#000095",
       background: BGhan,
       CloseIcon: CloseBbtn,
-      photo: "../../public/images/han_photo.png",
-      infoslogan: "../../public/images/han_slogan.png",
+      photo: PThan,
+      infoslogan: SLhan,
       educational: [
         "北京大學政府管理研究所博士班",
         "國立政治大學法學院東亞研究所法學碩士",
@@ -111,8 +123,8 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
         ["中國國民黨中央委員會常務委員", "--2020－迄今"],
         ["高雄市第3屆市長", "--2018－2020"],
       ],
-      battle: "images/han_battle.png",
-      triangle: "icon/han_triangle.png",
+      battle: BThan,
+      triangle: TGhan,
       quotes: [
         [
           <p className="p-1">「貨賣得出去，人跟錢進得來，高雄</p>,
@@ -177,10 +189,10 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
     {
       id: 2,
       color: "orange",
-      background: "../../public/images/song_bg.png",
+      background: BGsong,
       CloseIcon: CloseObtn,
-      photo: "../../public/images/song_photo.png",
-      infoslogan: "../../public/images/song_slogan.png",
+      photo: PTsong,
+      infoslogan: SLsong,
       educational: [
         "喬治城大學政治學博士",
         "柏克萊加利福尼亞大學政治學碩士",
@@ -192,8 +204,8 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
         ["臺北市政府市政顧問總召集人", "--2014－2021"],
         ["中華民國總統府資政", "--2016－2019"],
       ],
-      battle: "../../public/images/song_battle.png",
-      triangle: "../../public/icon/song_triangle.png",
+      battle: BTsong,
+      triangle: TGsong,
       quotes: [
         [
           <p className="p-1">「自古時勢造</p>,
