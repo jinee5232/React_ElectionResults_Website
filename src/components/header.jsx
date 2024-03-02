@@ -35,7 +35,10 @@ const header = () => {
             <ul className="menu">
               <li>
                 <Link to="/mappage">
-                  <img src={url("../../public/icon/headphones2.png")} alt="" />
+                  <img
+                    src={require("../../public/icon/headphones2.png")}
+                    alt=""
+                  />
                   開票地圖
                 </Link>
               </li>
@@ -85,22 +88,22 @@ const header = () => {
           <img onClick={setBack} src="/icon/Facebook.png" alt="facebook" />
           <img
             onClick={setBack}
-            src={url("../../public/icon/Instagram.png")}
+            src={require("../../public/icon/Instagram.png")}
             alt="instagram"
           />
           <img
             onClick={setBack}
-            src={url("../../public/icon/TwitterX.png")}
+            src={require("../../public/icon/TwitterX.png")}
             alt="twitter"
           />
           <img
             onClick={setBack}
-            src={url("../../public/icon/LINE.png")}
+            src={require("../../public/icon/LINE.png")}
             alt="line"
           />
           <img
             onClick={setBack}
-            src={url("../../public/icon/Plurk.png")}
+            src={require("../../public/icon/Plurk.png")}
             alt="plurk"
           />
         </div>
