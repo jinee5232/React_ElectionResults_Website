@@ -242,6 +242,7 @@
     font-size: 28px;
     left: 0;
     line-height: 32px;
+    margin: 0;
   }
   .nums-vote {
     display: flex;

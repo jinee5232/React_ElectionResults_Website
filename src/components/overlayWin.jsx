@@ -4,16 +4,25 @@ import Bigicon from "../../public/icon/Svg/font_big.svg?react";
 import Smallicon from "../../public/icon/Svg/font_small.svg?react";
 import Shareicon from "../../public/icon/Svg/share.svg?react";
 import "../styles/overlay.css";
+import CloseGbtn from "../../public/icon/btn_close_green.png";
+import CloseBbtn from "../../public/icon/btn_close_blue.png";
+import CloseObtn from "../../public/icon/btn_close_orange.png";
+import BGtasi from "../../public/images/tasi_bg.png";
+import PTtasi from "../../public/images/tasi_photo.png";
+import SLtasi from "../../public/images/tasi_slogan.png";
+import BTtasi from "../../public/images/tasi_battle.png";
+import TGtasi from "../../public/icon/tasi_triangle.png";
+import BGhan from "../../public/images/han_bg.png";
 
 const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
   const OverlayData = [
     {
       id: 0,
       color: "#D8B9C3",
-      background: "../../public/images/tasi_bg.png",
-      CloseIcon: "../../public/icon/btn_close_green.png",
-      photo: "../../public/images/tasi_photo.png",
-      infoslogan: "../../public/images/tasi_slogan.png",
+      background: BGtasi,
+      CloseIcon: CloseGbtn,
+      photo: PTtasi,
+      infoslogan: SLtasi,
       educational: [
         "英國倫敦政治經濟學院法學博士學位",
         "美國康乃爾大學法學院法學碩士",
@@ -24,8 +33,8 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
         ["行政院副院長", "-- 2006－2007"],
         ["民進黨不分區立法委員", "-- 2004－2006"],
       ],
-      battle: "../../public/images/tasi_battle.png",
-      triangle: "../../public/icon/tasi_triangle.png",
+      battle: BTtasi,
+      triangle: TGtasi,
       quotes: [
         [
           <p className="p-1">「</p>,
@@ -88,8 +97,8 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
     {
       id: 1,
       color: "#000095",
-      background: "../../public/images/han_bg.png",
-      CloseIcon: "../../public/icon/btn_close_blue.png",
+      background: BGhan,
+      CloseIcon: CloseBbtn,
       photo: "../../public/images/han_photo.png",
       infoslogan: "../../public/images/han_slogan.png",
       educational: [
@@ -169,7 +178,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
       id: 2,
       color: "orange",
       background: "../../public/images/song_bg.png",
-      CloseIcon: "../../public/icon/btn_close_orange.png",
+      CloseIcon: CloseObtn,
       photo: "../../public/images/song_photo.png",
       infoslogan: "../../public/images/song_slogan.png",
       educational: [
