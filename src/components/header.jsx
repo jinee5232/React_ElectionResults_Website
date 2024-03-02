@@ -57,11 +57,9 @@ const header = (headerToLayout) => {
                   開票地圖
                 </Link>
               </li>
-              <li>
-                <button onClick={SendOverlay0}>辣小英</button>
-              </li>
-              <li onClick={SendOverlay1}>韓導</li>
-              <li onClick={SendOverlay2}>辣個男人</li>
+              <li onClick={this.SendOverlay0}>辣小英</li>
+              <li onClick={this.SendOverlay1}>韓導</li>
+              <li onClick={this.SendOverlay2}>辣個男人</li>
             </ul>
           </nav>
           <ul className="socialList">
