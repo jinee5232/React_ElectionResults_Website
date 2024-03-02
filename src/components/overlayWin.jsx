@@ -33,7 +33,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
       color: "#D8B9C3",
       background: BGtasi,
       CloseIcon: CloseGbtn,
-      photo: PTtasi,
+      photo: "{PTtasi}",
       infoslogan: SLtasi,
       educational: [
         "英國倫敦政治經濟學院法學博士學位",
@@ -160,12 +160,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
                 {/* 左區塊開始 */}
                 <div className="contain_left">
                   <img className="contain_photo" src={item.photo} alt="" />
-                  <div className="contain_btn">
-                    <Smallicon className="Smallicon btn"></Smallicon>
-                    <Bigicon className="Bigicon btn"></Bigicon>
-                    <Shareicon className="Shareicon btn"></Shareicon>
-                  </div>
-                  <img className="contain_photo" src={item.infoslogan} alt="" />
+
                   <div className="content_history">
                     <h4>學歷</h4>
                     {item.educational.map((editem, index) => (
