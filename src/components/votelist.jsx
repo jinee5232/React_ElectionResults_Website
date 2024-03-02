@@ -4,7 +4,7 @@ import moment from "moment";
 import "../styles/votelist.css";
 import CITY_URL from "../assets/json/area_vote.json";
 import Information from "../../public/icon/icon_information.png";
-import Refresh from "../../public/icon/icon_refresh";
+import Refresh from "../../public/icon/icon_refresh.png";
 import Search from "../../public/icon/icon_search.png";
 
 const votelist = () => {
@@ -146,7 +146,7 @@ const votelist = () => {
         <div className="circleOF" id="cSearch">
           <img src={Search} alt="" />
         </div>
-        <div className="circleOF" id="cRefresh">
+        <div className="circleOF" id="cRefresh" onClick={() => timeoutId}>
           <img src={Refresh} alt="" />
         </div>
         <div id="cScroll"></div>
