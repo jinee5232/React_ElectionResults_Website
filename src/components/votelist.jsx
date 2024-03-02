@@ -58,6 +58,7 @@ const votelist = () => {
       han: item.han,
       tsai: item.tsai,
     }));
+    setShowdata(Totaldata);
     console.log(Totaldata);
     console.log(Totaldata2);
   }, []);
