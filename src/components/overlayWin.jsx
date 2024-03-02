@@ -161,10 +161,15 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
                 <div className="contain_left">
                   <img className="contain_photo" src={`${item.photo}`} alt="" />
                   <div className="contain_btn">
-                    <Smallicon className="Smallicon btn"></Smallicon>
+                    {/* <Smallicon className="Smallicon btn"></Smallicon>
                     <Bigicon className="Bigicon btn"></Bigicon>
-                    <Shareicon className="Shareicon btn"></Shareicon>
+                    <Shareicon className="Shareicon btn"></Shareicon> */}
                   </div>
+                  <img
+                    className="contain_photo"
+                    src={`${item.infoslogan}`}
+                    alt=""
+                  />
 
                   <div className="content_history">
                     <h4>學歷</h4>
@@ -181,6 +186,54 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
                   </div>
                 </div>
                 {/* 右區塊開始 */}
+                <div className="contain_right">
+                  <div className="content_battle">
+                    <h4>戰力指數</h4>
+                  </div>
+                  <div className="contain_slogan">
+                    {item.quotes.map((quitem, index) => (
+                      <div key={index}>
+                        {quitem.map((COitem, index) => (
+                          <div
+                            className="slogan_triangle"
+                            key={index}
+                            style={{
+                              backgroundImage: `url(${item.triangle})`,
+                            }}
+                          >
+                            <p className="p-1">{COitem[0]}</p>
+                            <div className={`em-text ${COitem[1]}`}>
+                              {COitem[2]}
+                            </div>
+                            <p className="p-2">{COitem[3]}</p>,
+                            <div className={`em-text ${COitem[4]}`}>
+                              {COitem[5]}
+                            </div>
+                            <p className="p-2">{COitem[6]}</p>,
+                            <div className={`em-text ${COitem[7]}`}>
+                              {COitem[8]}
+                            </div>
+                            <p className="p-2">{COitem[9]}</p>,
+                            <div className={`em-text ${COitem[10]}`}>
+                              {COitem[11]}
+                            </div>
+                            <p className="p-2">{COitem[12]}</p>,
+                            <div className={`em-text ${COitem[13]}`}>
+                              {COitem[14]}
+                            </div>
+                            <p className="p-2">{COitem[15]}</p>
+                          </div>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+
+                  <img
+                    className="battle_photo"
+                    src={`${item.battle}`}
+                    alt="battle_tasi"
+                  />
+                </div>
               </div>
             </div>
           ))}
