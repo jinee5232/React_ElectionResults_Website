@@ -24,6 +24,10 @@ const header = (headerToLayout) => {
   const setBack = () => {
     setsharebtn(true);
   };
+  const SendOverlay = (e) => {
+    const Sendvalue = e.target.value;
+    headerToLayout(true, Sendvalue);
+  };
 
   return (
     <div>
@@ -48,13 +52,13 @@ const header = (headerToLayout) => {
                   開票地圖
                 </Link>
               </li>
-              <li value={0} onClick={(e) => headerToLayout(true, e)}>
+              <li value="0" onClick={(e) => SendOverlay(e)}>
                 <a>辣小英</a>
               </li>
-              <li value={1} onClick={(e) => headerToLayout(true, e)}>
+              <li value="1" onClick={(e) => SendOverlay(e)}>
                 <a>韓導</a>
               </li>
-              <li value={2} onClick={(e) => headerToLayout(true, e)}>
+              <li value="2" onClick={(e) => SendOverlay(e)}>
                 <a>辣個男人</a>
               </li>
             </ul>
