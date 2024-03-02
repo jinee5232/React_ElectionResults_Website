@@ -32,9 +32,9 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
       id: 0,
       color: "#D8B9C3",
       background: BGtasi,
-      CloseIcon: { CloseGbtn },
-      photo: { PTtasi },
-      infoslogan: { SLtasi },
+      CloseIcon: CloseGbtn,
+      photo: PTtasi,
+      infoslogan: SLtasi,
       educational: [
         "英國倫敦政治經濟學院法學博士學位",
         "美國康乃爾大學法學院法學碩士",
@@ -45,8 +45,8 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
         ["行政院副院長", "-- 2006－2007"],
         ["民進黨不分區立法委員", "-- 2004－2006"],
       ],
-      battle: { BTtasi },
-      triangle: { TGtasi },
+      battle: BTtasi,
+      triangle: TGtasi,
       quotes: [
         [
           "「",
