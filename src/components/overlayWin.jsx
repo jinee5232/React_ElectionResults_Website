@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-
 // j
 // import Smallicon from "../../public/icon/Svg/font_small.svg?react";
 // import Shareicon from "../../public/icon/Svg/share.svg?react";
 import Bigicon from "../../public/icon/Svg/font_big.svg";
-import Smallicon from "../../public/icon/Svg/font_small.svg";
+import Smallicon from "../../public/icon/Svg/font_small.svg?react";
 import Shareicon from "../../public/icon/Svg/share.svg";
 import "../styles/overlay.css";
 import CloseGbtn from "../../public/icon/btn_close_green.png";
