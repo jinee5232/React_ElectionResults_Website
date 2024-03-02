@@ -57,7 +57,7 @@ const votelist = () => {
         tsai: area.tsai,
       }))
     );
-    setShowdata(Totaldata);
+    setShowdata([Totaldata]);
   }, []);
   //時間更新
   useEffect(() => {
