@@ -7,6 +7,8 @@ import Instrgram from "../../public/icon/Instagram.png";
 import Twitter from "../../public/icon/TwitterX.png";
 import Facebook from "/icon/Facebook.png";
 import Livephoto from "/icon/headphones2.png";
+import Line from "../../public/icon/LINE.png";
+import Plurk from "../../public/icon/Plurk.png";
 // import Shareicon from "../assets/Svg/share.svg?react";
 import Shareicon from "../assets/Svg/share.svg";
 const header = (headerToLayout) => {
@@ -92,12 +94,8 @@ const header = (headerToLayout) => {
           <img onClick={setBack} src={Facebook} alt="facebook" />
           <img onClick={setBack} src={Instrgram} alt="instagram" />
           <img onClick={setBack} src={Twitter} alt="twitter" />
-          <img onClick={setBack} src="../../public/icon/LINE.png" alt="line" />
-          <img
-            onClick={setBack}
-            src="../../public/icon/Plurk.png"
-            alt="plurk"
-          />
+          <img onClick={setBack} src={Line} alt="line" />
+          <img onClick={setBack} src={Plurk} alt="plurk" />
         </div>
       </header>
     </div>
