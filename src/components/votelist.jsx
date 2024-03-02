@@ -57,7 +57,7 @@ const votelist = () => {
         tsai: area.tsai,
       }))
     );
-    setShowdata([Totaldata]);
+    setShowdata(Totaldata);
   }, []);
   //時間更新
   useEffect(() => {
@@ -129,10 +129,11 @@ const votelist = () => {
           {/* ↓一排長條圖塞這裡↓ */}
 
           {showdata.map((item, index) => {
-            const GT = item[0];
+            const GT = item.area;
             const Tsai = Number(item.tsai);
             const Han = Number(item.han);
             const Song = Number(item.song);
+            console.log(Tasi, Han, Song);
             const a = ((Tsai / (Tsai + Han + Song)) * 100).toFixed(1) + "%";
             const b = ((Han / (Tsai + Han + Song)) * 100).toFixed(1) + "%";
             const c = ((Song / (Tsai + Han + Song)) * 100).toFixed(1) + "%";
