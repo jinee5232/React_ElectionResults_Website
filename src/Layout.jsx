@@ -12,6 +12,7 @@ const Layout = () => {
   const changeState = (childdata, value) => {
     setIsOverlayOpen(childdata);
     setinData(value);
+    console.log(childdata + value);
   };
   console.log(isOverlayOpen);
   // onValueChange = { handleValueChange };
