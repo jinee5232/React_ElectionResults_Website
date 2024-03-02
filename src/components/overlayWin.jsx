@@ -49,60 +49,16 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
       triangle: { TGtasi },
       quotes: [
         [
-          <p className="p-1">「</p>,
-          <div className="em-text red">中國</div>,
-          <p className="p-2">只要</p>,
-          <div className="em-text green">不擋</div>,
-          <p className="p-2">，就是對我們最大的</p>,
-          <div className="em-text green">幫助</div>,
-          <p className="p-2">。」</p>,
-        ],
-        ,
-        [
-          <p className="p-1">「其實我……是</p>,
-          <div className="em-text green">接近</div>,
-          <p className="p-2">的，只是你不知道我在</p>,
-          <div className="em-text green">接近</div>,
-          <p className="p-2">你而已。」</p>,
-        ],
-        [
-          <p className="p-1">「或許有些人一時</p>,
-          <div className="em-text green">感受不到</div>,
-          <p className="p-2">，我相信，</p>,
-          <div className="em-text green">時間到了</div>,
-          <p className="p-2">
-            ，他們一定會感受到這是個很認真的政府，我有很認真的在
-          </p>,
-          <div className="em-text green">解決問題</div>,
-          <p className="p-2">，也一定會有</p>,
-          <div className="em-text green">成效</div>,
-          <p className="p-2">的。」</p>,
-        ],
-        [
-          <p className="p-1">「當年</p>,
-          <div className="em-text red">製造問題</div>,
-          <p className="p-2">的人不僅</p>,
-          <div className="em-text blue">不反省</div>,
-          <p className="p-2">，現在還反過來說要教訓</p>,
-          <div className="em-text green">改革</div>,
-          <p className="p-2">的人。」</p>,
-        ],
-        [
-          <p className="p-1">「我們要提醒</p>,
-          <div className="em-text green">全黨上下</div>,
-          <p className="p-2">
-            ，應該要用『誠惶誠恐，如履薄冰』的心情來看待人民的託付。我們可以
-          </p>,
-          <div className="em-text green">高興</div>,
-          <p className="p-2">，但是我們從今天晚上開始，就要以這一次</p>,
-          <div className="em-text blue">國民黨</div>,
-          <p className="p-2">的</p>,
-          <div className="em-text red">失敗</div>,
-          <p className="p-2">為警惕。一個政府如果不站在</p>,
-          <div className="em-text green">人民</div>,
-          <p className="p-2">的這一邊，人民會隨時把權力</p>,
-          <div className="em-text green">收回去</div>,
-          <p className="p-2">。」</p>,
+          "「",
+          red,
+          "中國",
+          "只要",
+          green,
+          "不擋",
+          "，就是對我們最大的",
+          green,
+          "幫助",
+          "。」",
         ],
       ],
     },
@@ -125,66 +81,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
       ],
       battle: BThan,
       triangle: TGhan,
-      quotes: [
-        [
-          <p className="p-1">「貨賣得出去，人跟錢進得來，高雄</p>,
-          <div className="em-text blue">發大財</div>,
-          <p className="p-2">！」</p>,
-        ],
-        [
-          <p className="p-1">「得民心者得</p>,
-          <div className="em-text blue">天下</div>,
-          <p className="p-2">，得民調者得</p>,
-          <div className="em-text red">痔瘡</div>,
-          <p className="p-2">。」</p>,
-        ],
-        [
-          <p className="p-1">「來高雄投資，給高雄</p>,
-          <div className="em-text blue">一萬個</div>,
-          <p className="p-2">工作機會，我就</p>,
-          <div className="em-text red">以身相許</div>,
-          <p className="p-2">，晚上跟你睡覺。。。是陪</p>,
-          <div className="em-text green">泡茶聊天</div>,
-          <p className="p-2">，不要想歪了！」</p>,
-        ],
-        [
-          <p className="p-1">「我準備承擔任何</p>,
-          <div className="em-text blue">重要職務</div>,
-          <p className="p-2">，為了中華民國，不惜</p>,
-          <div className="em-text red">粉身碎骨</div>,
-          <p className="p-2">。」</p>,
-        ],
-        [
-          <p className="p-1">「立足</p>,
-          <div className="em-text green">台灣</div>,
-          <p className="p-2">{">"}胸懷</p>,
-          <div className="em-text red">大陸</div>,
-          <p className="p-2">{">"}放眼</p>,
-          <div className="em-text blue">世界</div>,
-          <p className="p-2">{">"}征服宇宙∞」</p>,
-        ],
-        [
-          <p className="p-1">「莫忘世上</p>,
-          <div className="em-text blue">苦人</div>,
-          <p className="p-2">多。」</p>,
-        ],
-        [
-          <p className="p-1">「說出嘴的</p>,
-          <div className="em-text blue">話語</div>,
-          <p className="p-2">和吃進肚的</p>,
-          <div className="em-text blue">東西</div>,
-          <p className="p-2">同樣重要。」</p>,
-        ],
-        [
-          <p className="p-1">「</p>,
-          <div className="em-text blue">國民黨</div>,
-          <p className="p-2">再不努力，這一支</p>,
-          <div className="em-text red">股票</div>,
-          <p className="p-2">就要下市了！進入</p>,
-          <div className="em-text green">全額交割股</div>,
-          <p className="p-2">！」</p>,
-        ],
-      ],
+      quotes: [["「貨賣得出去，人跟錢進得來，高雄", blue, "發大財", "！」"]],
     },
     {
       id: 2,
@@ -207,54 +104,18 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
       battle: BTsong,
       triangle: TGsong,
       quotes: [
+        ["「自古時勢造", orange, "英雄", "豈有", orange, "主角", "等燈光！」"],
         [
-          <p className="p-1">「自古時勢造</p>,
-          <div className="em-text orange">英雄</div>,
-          <p className="p-2">，豈有</p>,
-          <div className="em-text orange">主角</div>,
-          <p className="p-2">等燈光！」</p>,
-        ],
-        [
-          <p className="p-1">「你可以去問他們為什麼不讓宋楚瑜</p>,
-          <div className="em-text orange">參選</div>,
-          <p className="p-2">，其實</p>,
-          <div className="em-text blue">藍白合</div>,
-          <p className="p-2">只要推宋楚瑜出來參選，問題不就</p>,
-          <div className="em-text orange">解決</div>,
-          <p className="p-2">了嗎？」</p>,
-        ],
-        [
-          <p className="p-1">「希望</p>,
-          <div className="em-text blue">國民黨</div>,
-          <p className="p-2">好朋友們，好好去看一看</p>,
-          <div className="em-text green">古文觀止</div>,
-          <p className="p-2">
-            ，宋楚瑜只有兩萬票，不要自己四面楚歌、草木皆兵，就怕中了我的
-          </p>,
-          <div className="em-text orange">十面埋伏</div>,
-          <p className="p-2">。」</p>,
-        ],
-        [
-          <p className="p-1">「希望</p>,
-          <div className="em-text orange">馬總統</div>,
-          <p className="p-2">對八年來人民遇到的問題多費點心，而不是要評論</p>,
-          <div className="em-text blue">下任總統</div>,
-          <p className="p-2">是男性還是女性。」</p>,
-        ],
-        [
-          <p className="p-1">「宋楚瑜也好，</p>,
-          <div className="em-text orange">親民黨</div>,
-          <p className="p-2">也好，不會去對於</p>,
-          <div className="em-text green">民進黨</div>,
-          <p className="p-2">
-            新執政之後，要給他們去喬位置，去找什麼官來做。我們要提的是在
-          </p>,
-          <div className="em-text orange">立法院</div>,
-          <p className="p-2">，我們</p>,
-          <div className="em-text blue">共同協助</div>,
-          <p className="p-2">，我們不要站在任何哪個政黨那一邊而是站在</p>,
-          <div className="em-text orange">人民</div>,
-          <p className="p-2">那一邊。」</p>,
+          "「你可以去問他們為什麼不讓宋楚瑜",
+          orange,
+          "參選",
+          "，其實",
+          blue,
+          "藍白合",
+          "只要推宋楚瑜出來參選，問題不就",
+          orange,
+          "解決",
+          "了嗎？」",
         ],
       ],
     },
@@ -322,14 +183,38 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
                   </div>
                   <div className="contain_slogan">
                     {item.quotes.map((quitem, index) => (
-                      <div
-                        className="slogan_triangle"
-                        key={index}
-                        style={{
-                          backgroundImage: `url(${item.triangle})`,
-                        }}
-                      >
-                        {quitem}
+                      <div key={index}>
+                        {quitem.map((COitem, index) => (
+                          <div
+                            className="slogan_triangle"
+                            key={index}
+                            style={{
+                              backgroundImage: `url(${item.triangle})`,
+                            }}
+                          >
+                            <p className="p-1">{COitem[0]}</p>
+                            <div className={`em-text ${COitem[1]}`}>
+                              {COitem[2]}
+                            </div>
+                            <p className="p-2">{COitem[3]}</p>,
+                            <div className={`em-text ${COitem[4]}`}>
+                              {COitem[5]}
+                            </div>
+                            <p className="p-2">{COitem[6]}</p>,
+                            <div className={`em-text ${COitem[7]}`}>
+                              {COitem[8]}
+                            </div>
+                            <p className="p-2">{COitem[9]}</p>,
+                            <div className={`em-text ${COitem[10]}`}>
+                              {COitem[11]}
+                            </div>
+                            <p className="p-2">{COitem[12]}</p>,
+                            <div className={`em-text ${COitem[13]}`}>
+                              {COitem[14]}
+                            </div>
+                            <p className="p-2">{COitem[15]}</p>
+                          </div>
+                        ))}
                       </div>
                     ))}
                   </div>
