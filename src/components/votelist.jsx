@@ -21,6 +21,7 @@ const votelist = () => {
     const getStatedata = CITY_URL.find(
       (country) => country.CityName === getcountryId
     ).AreaList;
+    console.log(getStatedata);
     if (getStatedata !== undefined) {
       const filterData = getStatedata.filter((item) => {
         if (item.area !== undefined) {
