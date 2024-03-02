@@ -85,17 +85,17 @@ const header = (headerToLayout) => {
           <img onClick={setBack} src="/icon/Facebook.png" alt="facebook" />
           <img
             onClick={setBack}
-            src={url("../..//icon/Instagram.png")}
+            src={url("../../public/icon/Instagram.png")}
             alt="instagram"
           />
           <img
             onClick={setBack}
-            src={url("../..//public/icon/TwitterX.png")}
+            src={url("../../public/icon/TwitterX.png")}
             alt="twitter"
           />
           <img
             onClick={setBack}
-            src={url("../..//public/icon/LINE.png")}
+            src={url("../../public/icon/LINE.png")}
             alt="line"
           />
           <img
