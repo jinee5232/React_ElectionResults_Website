@@ -139,7 +139,7 @@ const votelist = () => {
             console.log(a, b, c);
             return (
               <div id="listChart">
-                <h4 key={index}>{item.area}</h4>
+                <h4 key={index}>{item[0]}</h4>
                 <div className="nums-vote" id="nums-vote">
                   <div
                     className="chart_green"
