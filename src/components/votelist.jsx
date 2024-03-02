@@ -43,15 +43,16 @@ const votelist = () => {
     }
   };
   console.log(showdata);
+  const timeoutId = setTimeout(() => {
+    setRefresh((r) => r + 1);
+    setTimer(
+      moment(new Date().getTime()).format("YYYY年MM月DD日 HH時mm分ss秒")
+    );
+  }, 30000);
 
   //時間更新
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setRefresh((r) => r + 1);
-      setTimer(
-        moment(new Date().getTime()).format("YYYY年MM月DD日 HH時mm分ss秒")
-      );
-    }, 30000);
+    timeoutId();
     return () => {
       clearTimeout(timeoutId);
     };
