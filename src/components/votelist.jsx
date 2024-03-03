@@ -14,59 +14,64 @@ const votelist = () => {
   const [refresh, setRefresh] = useState(0);
   const [townname, setTownname] = useState([]);
   const [showdata, setShowdata] = useState([]);
+  // const [CitydataA, setCitydata] = useState([]);
   const handlecountry = (e) => {
     const getcountryId = e.target.value;
-    setTownname(null);
-
-    const getStatedata = CITY_URL.find(
-      (country) => country.CityName === getcountryId
-    ).AreaList;
-    console.log(getStatedata);
-    if (getStatedata !== undefined) {
+    // setCitydata(getcountryId);
+    // console.log(setCitydata);
+    document.getElementById("town").value = ""; // 或者您可以將 '' 替換為您想要的預設值
+    if (getcountryId !== "") {
+      // 尋找縣市有沒有符合，生出列表
+      const getStatedata = CITY_URL.find(
+        (country) => country.CityName === getcountryId
+      ).AreaList;
       const filterData = getStatedata.filter((item) => {
         if (item.area !== undefined) {
           return item;
         }
       });
+      console.log(filterData);
       setTownname(filterData);
       setShowdata(filterData);
+      handletown(e);
+    } else {
+      // 清空townname，顯示所有縣市的數據
+      setTownname([]);
+      setShowdata(Totaldata2);
     }
 
-    document.getElementById("town").value = "請選擇"; // 或者您可以將 '' 替換為您想要的預設值
+    // setTownname(null);
   };
-  //過濾掉undefined
-  const filterData = townname.filter((item) => {
-    if (item.area !== undefined) {
-      return item;
-    }
-  });
+  //過濾掉區和鄉undefined
 
   const handletown = (e) => {
-    const gettownId = e.target.value;
-    const getAreadata = filterData.find((item) => item.area === gettownId);
+    if (townname !== "") {
+      const gettownId = e.target.value;
+      const getAreadata = townname.find((item) => item.area === gettownId);
 
-    if (getAreadata.han !== undefined) {
-      setShowdata([getAreadata]);
+      if (getAreadata !== undefined) {
+        setShowdata([getAreadata]);
+      }
     }
   };
   console.log(showdata);
+
   const RefreshTime = () => {
     setTimer(
       moment(new Date().getTime()).format("YYYY年MM月DD日 HH時mm分ss秒")
     );
   };
+  const Totaldata = CITY_URL.map((city) =>
+    city.AreaList.find((area) => area.total)
+  ).filter(Boolean);
+  const Totaldata2 = Totaldata.map((item) => ({
+    area: item.total,
+    song: item.song,
+    han: item.han,
+    tsai: item.tsai,
+  }));
   useEffect(() => {
-    const Totaldata = CITY_URL.map((city) =>
-      city.AreaList.find((area) => area.total)
-    ).filter(Boolean);
-    const Totaldata2 = Totaldata.map((item) => ({
-      area: item.total,
-      song: item.song,
-      han: item.han,
-      tsai: item.tsai,
-    }));
     setShowdata(Totaldata2);
-    console.log(Totaldata2);
     // console.log(Totaldata2);
   }, []);
   //時間更新
@@ -135,9 +140,8 @@ const votelist = () => {
             倒數下次更新時間：05分00秒
           </p>
         </div>
-        <div id="sortList">
+        <div id="sortList" className="scollbar">
           {/* ↓一排長條圖塞這裡↓ */}
-
           {showdata.map((item, index) => {
             const GT = item.area;
             const Tsai = Number(item.tsai);
