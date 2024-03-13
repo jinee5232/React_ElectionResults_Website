@@ -14,7 +14,7 @@ const Layout = () => {
     setinData(value);
     console.log(childdata + value);
   };
-  console.log(isOverlayOpen);
+  //console.log(isOverlayOpen);
   // onValueChange = { handleValueChange };
   return (
     <div>

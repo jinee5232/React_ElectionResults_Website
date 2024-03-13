@@ -7,16 +7,18 @@ import Information from "../../public/icon/icon_information.png";
 import Refresh from "../../public/icon/icon_refresh.png";
 import Search from "../../public/icon/icon_search.png";
 
-const votelist = () => {
+const votelist = ({ county, handleSelectedArea }) => {
   const [timer, setTimer] = useState(
     moment(new Date().getTime()).format("YYYY年MM月DD日 HH時mm分ss秒")
   );
+  const [selectedArea, setSelectedArea] = useState("");
   const [refresh, setRefresh] = useState(0);
   const [townname, setTownname] = useState([]);
   const [showdata, setShowdata] = useState([]);
   // const [CitydataA, setCitydata] = useState([]);
   const handlecountry = (e) => {
     const getcountryId = e.target.value;
+
     // setCitydata(getcountryId);
     // console.log(setCitydata);
     document.getElementById("town").value = ""; // 或者您可以將 '' 替換為您想要的預設值
@@ -30,7 +32,7 @@ const votelist = () => {
           return item;
         }
       });
-      console.log(filterData);
+      // console.log(filterData);
       setTownname(filterData);
       setShowdata(filterData);
       handletown(e);
@@ -39,7 +41,7 @@ const votelist = () => {
       setTownname([]);
       setShowdata(Totaldata2);
     }
-
+    handleSelectedArea(getcountryId);
     // setTownname(null);
   };
   //過濾掉區和鄉undefined
@@ -54,7 +56,7 @@ const votelist = () => {
       }
     }
   };
-  console.log(showdata);
+  // console.log(showdata);
 
   const RefreshTime = () => {
     setTimer(
@@ -86,7 +88,23 @@ const votelist = () => {
   }, [refresh]);
   // function drawBarChart(){
   //   d3.select('.chart svg').remove();
-
+  useEffect(() => {
+    //console.log(county);
+    if (county !== null) {
+      //console.log(county);
+      const getStatedata = CITY_URL.find(
+        (country) => country.CityName === county
+      ).AreaList;
+      const filterData = getStatedata.filter((item) => {
+        if (item.area !== undefined) {
+          return item;
+        }
+      });
+      setTownname(filterData);
+      setShowdata(filterData);
+      setSelectedArea(county);
+    }
+  }, [county]);
   //   const
   // }
   // 右邊的列表+按鈕  start
@@ -101,6 +119,7 @@ const votelist = () => {
               className="area-town"
               id="area"
               onChange={(e) => handlecountry(e)}
+              value={selectedArea} // 将 selectedArea 作为 value 属性
             >
               <option value="">請選擇</option>
               {CITY_URL.map((getcity, index) => (
@@ -147,15 +166,15 @@ const votelist = () => {
             const Tsai = Number(item.tsai);
             const Han = Number(item.han);
             const Song = Number(item.song);
-            console.log(item.tsai, item.han, item.song);
-            console.log(Tsai, Han, Song);
+            // console.log(item.tsai, item.han, item.song);
+            // console.log(Tsai, Han, Song);
             const a = ((Tsai / (Tsai + Han + Song)) * 100).toFixed(1) + "%";
             const b = ((Han / (Tsai + Han + Song)) * 100).toFixed(1) + "%";
             const c = ((Song / (Tsai + Han + Song)) * 100).toFixed(1) + "%";
-            console.log(a, b, c);
+            // console.log(a, b, c);
             return (
-              <div id="listChart">
-                <h4 key={index}>{item.area}</h4>
+              <div key={index} id="listChart">
+                <h4>{item.area}</h4>
                 <div className="nums-vote" id="nums-vote">
                   <div
                     className="chart_green"

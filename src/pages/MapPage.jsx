@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import React, { useEffect, useState, useRef } from "react";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import "../styles/mapppage.css";
 import Votelist from "../components/votelist.jsx";
 
 const MapPage = () => {
+  const [clickedCountry, setClickedCountry] = useState(null);
   let [mapiframe, setMapiframe] = useState("https://plotdb.io/v/chart/34089");
   let [candidatename, setCandidatename] = useState("蔡英文");
   let [namecolor, setNamecolor] = useState({ color: "#1b9431" });
@@ -12,6 +13,43 @@ const MapPage = () => {
     background: "#1b9431",
   });
   let [vote, setVote] = useState("8,170,231");
+  const iframeRef = useRef(null);
+  const handleSelectedArea = (selectedArea) => {
+    setClickedCountry(selectedArea); // 將 selectedArea 設置為 county 狀態的新值
+    //console.log("xoxo:" + selectedArea);
+    if (iframeRef.current) {
+      iframeRef.current.contentWindow.postMessage(
+        { type: "countyChange", county: selectedArea },
+        "*"
+      );
+    }
+  };
+
+  useEffect(() => {
+    const handleMessage = (event) => {
+      // 检查消息来源是否为 iframe
+      if (event.source !== iframeRef.current.contentWindow) return;
+
+      // 获取从 iframe 发来的消息
+      const { type, county, town } = event.data;
+
+      // 处理接收到的消息
+      if (type === "mapClick") {
+        setClickedCountry(county);
+        console.log("我是REACT我收到", county);
+        //console.log("Clicked Town:", town);
+        // 在这里执行您需要的其他操作
+      }
+    };
+
+    // 添加事件监听器
+    window.addEventListener("message", handleMessage);
+
+    // 清除事件监听器
+    return () => {
+      window.removeEventListener("message", handleMessage);
+    };
+  }, [iframeRef.current]); // 当 iframeRef.current 发生变化时重新执行 useEffect
 
   const changeMapblue = () => {
     setMapiframe("https://plotdb.io/v/chart/34088");
@@ -48,8 +86,9 @@ const MapPage = () => {
                 src={mapiframe}
                 width="100%"
                 height="110%"
-                allowfullscreen="true"
-                frameborder="0"
+                allowFullScreen={true}
+                frameBorder={0}
+                ref={iframeRef}
               ></iframe>
             </div>
             {/* 地圖下面的東西 start */}
@@ -104,7 +143,10 @@ const MapPage = () => {
         </div>
         {/* 左邊的卡片  end */}
 
-        <Votelist />
+        <Votelist
+          county={clickedCountry}
+          handleSelectedArea={handleSelectedArea}
+        />
       </div>
     </div>
   );
