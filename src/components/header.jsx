@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import "../styles/header.css";
 import Bigicon from "../assets/Svg/font_big.svg?react";
 import Smallicon from "../assets/Svg/font_small.svg?react";
-import Instrgram from "../../public/icon/Instagram.png";
-import Twitter from "../../public/icon/TwitterX.png";
+import Instrgram from "/icon/Instagram.png";
+import Twitter from "/icon/TwitterX.png";
 import Facebook from "/icon/Facebook.png";
 import Livephoto from "/icon/headphones2.png";
-import Line from "../../public/icon/LINE.png";
-import Plurk from "../../public/icon/Plurk.png";
+import Line from "/icon/LINE.png";
+import Plurk from "/icon/Plurk.png";
 import Shareicon from "../assets/Svg/share.svg?react";
 const header = ({ headerToLayout }) => {
   // const Image = {

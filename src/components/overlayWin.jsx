@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from "react";
-import Smallicon from "../../public/icon/Svg/font_small.svg?react";
-import Shareicon from "../../public/icon/Svg/share.svg?react";
-import Bigicon from "../../public/icon/Svg/font_big.svg?react";
+import Smallicon from "../assets/Svg/font_small.svg?react";
+import Shareicon from "../assets/Svg/share.svg?react";
+import Bigicon from "../assets/Svg/font_big.svg?react";
 import "../styles/overlay.css";
-import CloseGbtn from "../../public/icon/btn_close_green.png";
-import CloseBbtn from "../../public/icon/btn_close_blue.png";
-import CloseObtn from "../../public/icon/btn_close_orange.png";
-import BGtasi from "../../public/images/tasi_bg.png";
-import PTtasi from "../../public/images/tasi_photo.png";
-import SLtasi from "../../public/images/tasi_slogan.png";
-import BTtasi from "../../public/images/tasi_battle.png";
-import TGtasi from "../../public/icon/tasi_triangle.png";
-import BGhan from "../../public/images/han_bg.png";
-import PThan from "../../public/images/han_photo.png";
-import SLhan from "../../public/images/han_slogan.png";
-import BThan from "../../public/images/han_battle.png";
-import TGhan from "../../public/icon/han_triangle.png";
-import BGsong from "../../public/images/song_bg.png";
-import PTsong from "../../public/images/song_photo.png";
-import SLsong from "../../public/images/song_slogan.png";
-import BTsong from "../../public/images/song_battle.png";
-import TGsong from "../../public/icon/song_triangle.png";
+import CloseGbtn from "/icon/btn_close_green.png";
+import CloseBbtn from "/icon/btn_close_blue.png";
+import CloseObtn from "/icon/btn_close_orange.png";
+import BGtasi from "/images/tasi_bg.png";
+import PTtasi from "/images/tasi_photo.png";
+import SLtasi from "/images/tasi_slogan.png";
+import BTtasi from "/images/tasi_battle.png";
+import TGtasi from "/icon/tasi_triangle.png";
+import BGhan from "/images/han_bg.png";
+import PThan from "/images/han_photo.png";
+import SLhan from "/images/han_slogan.png";
+import BThan from "/images/han_battle.png";
+import TGhan from "/icon/han_triangle.png";
+import BGsong from "/images/song_bg.png";
+import PTsong from "/images/song_photo.png";
+import SLsong from "/images/song_slogan.png";
+import BTsong from "/images/song_battle.png";
+import TGsong from "/icon/song_triangle.png";
 
 const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
   const OverlayData = [

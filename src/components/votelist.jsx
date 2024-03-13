@@ -3,9 +3,9 @@ import React, { useState, useEffect } from "react";
 import moment from "moment";
 import "../styles/votelist.css";
 import CITY_URL from "../assets/json/area_vote.json";
-import Information from "../../public/icon/icon_information.png";
-import Refresh from "../../public/icon/icon_refresh.png";
-import Search from "../../public/icon/icon_search.png";
+import Information from "/icon/icon_information.png";
+import Refresh from "/icon/icon_refresh.png";
+import Search from "/icon/icon_search.png";
 
 const votelist = ({ county, handleSelectedArea }) => {
   const [timer, setTimer] = useState(
