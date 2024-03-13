@@ -108,7 +108,7 @@
 #imgSeal {
   width: 30px;
   height: 30px;
-  background-image: url("icon/small_seal.png");
+  background-image: url("/icon/small_seal.png");
 }
 #candidate > p {
   color: #666666;

@@ -72,7 +72,7 @@ header {
 #bgSeal {
   width: 113px;
   height: 113px;
-  background-image: url(homepage/seal.png);
+  /* background-image: url(homepage/seal.png); */
   background-size: cover;
   position: absolute;
   top: 245px;
@@ -82,7 +82,7 @@ header {
 #bgArr {
   width: 56px;
   height: 63px;
-  background-image: url(homepage/mouse.png);
+  /* background-image: url(homepage/mouse.png); */
   background-size: cover;
   position: absolute;
   top: 350px;
