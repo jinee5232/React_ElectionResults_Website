@@ -27,6 +27,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
     {
       id: 0,
       color: "#D8B9C3",
+      alt: "蔡英文",
       background: BGtasi,
       CloseIcon: CloseGbtn,
       photo: PTtasi,
@@ -107,6 +108,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
       color: "#000095",
       background: BGhan,
       CloseIcon: CloseBbtn,
+      alt: "韓國瑜",
       photo: PThan,
       infoslogan: SLhan,
       educational: [
@@ -187,6 +189,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
       color: "orange",
       background: BGsong,
       CloseIcon: CloseObtn,
+      alt: "宋楚瑜",
       photo: PTsong,
       infoslogan: SLsong,
       educational: [
@@ -279,14 +282,18 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
               <div className="overlay_controls">
                 <img
                   src={`${item.CloseIcon}`}
-                  alt="close"
+                  alt="closeBtn"
                   onClick={() => overlayToLayout(false)}
                 />
               </div>
               <div className="overlay_contain">
                 {/* 左區塊開始 */}
                 <div className="contain_left">
-                  <img className="contain_photo" src={`${item.photo}`} alt="" />
+                  <img
+                    className="contain_photo"
+                    src={`${item.photo}`}
+                    alt={item.alt}
+                  />
                   <div className="contain_btn">
                     <Smallicon className="Smallicon btn" />
                     <Bigicon className="Bigicon btn"></Bigicon>
@@ -295,7 +302,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
                   <img
                     className="contain_photo"
                     src={`${item.infoslogan}`}
-                    alt=""
+                    alt={item.alt}
                   />
 
                   <div className="content_history">
@@ -336,7 +343,7 @@ const overlayWin = ({ isOpen, overlayToLayout, inData }) => {
                   <img
                     className="battle_photo"
                     src={`${item.battle}`}
-                    alt="battle_tasi"
+                    alt="battle_戰力指數"
                   />
                 </div>
               </div>

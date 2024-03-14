@@ -89,6 +89,7 @@ const MapPage = () => {
                 allowFullScreen={true}
                 frameBorder={0}
                 ref={iframeRef}
+                alt="選舉分布地圖"
               ></iframe>
             </div>
             {/* 地圖下面的東西 start */}
