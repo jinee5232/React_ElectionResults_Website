@@ -121,3 +121,8 @@ header {
   transition: translate 100ms cubic-bezier(15, 25, 5, 45),
     background-color 250ms;
 }
+@media (max-width: 1440px) {
+  .container {
+    width: 100vw;
+  }
+}
