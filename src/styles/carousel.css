@@ -1,7 +1,7 @@
 .swiper-container {
   position: relative;
   height: 100%;
-  width: 40vw;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,8 +27,7 @@
 
 .mySwiper1,
 .mySwiper2 {
-  width: 600px;
-  height: 380px;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 5%;
   position: relative;
@@ -50,7 +49,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 35px;
-  font-size: 22px;
   font-weight: bold;
   color: #fff;
 }
@@ -60,7 +58,7 @@
 }
 
 .swiper-slide > img {
-  width: 655px;
+  width: 100%;
   /* 物件內圖片保持比例填滿 */
   object-fit: cover;
   /* 視覺中心點 */
@@ -74,16 +72,8 @@
 
 .slogan {
   width: 100%;
-  height: 160px;
 }
 
-.left-section {
-  height: 100%;
-  width: 20vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 /* .left-section {
     position: relative;
     top: -2rem;
@@ -93,16 +83,6 @@
   position: absolute;
   top: 262px;
   left: 95px;
-}
-
-.left-section h1 {
-  color: #1a134f;
-  font-size: 80px;
-  letter-spacing: 15%;
-  font-weight: 700;
-  line-height: 1.2em;
-  margin: 10% auto;
-  text-shadow: 0.05em 0.05em 0.05em #fffefe;
 }
 
 .text {

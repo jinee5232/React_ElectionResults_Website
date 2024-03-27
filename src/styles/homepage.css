@@ -39,12 +39,14 @@ header {
   width: 80vw;
   height: 80vh;
   margin: 0 auto;
+
   display: flex;
   overflow: hidden;
   .main-section {
     display: flex;
     width: 100%;
     margin: 0 auto;
+    justify-content: space-between;
   }
 }
 /*格鬥大會*/
@@ -61,8 +63,10 @@ header {
 }
 
 .text-container {
+  box-sizing: border-box;
   position: relative;
-  width: 10vw;
+  width: 25%;
+  padding: 30px;
   display: inline-block;
   margin: auto;
   text-align: justify;
@@ -72,6 +76,7 @@ header {
 /* 這邊下面是開票啦 */
 #invoicing {
   position: relative;
+  text-align: center;
 }
 
 #bgSeal {
@@ -82,6 +87,23 @@ header {
   position: absolute;
   top: 245px;
   left: 250px;
+}
+
+.left-section {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    color: #1a134f;
+    font-size: 80px;
+    letter-spacing: 15%;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 10% auto;
+    text-shadow: 0.05em 0.05em 0.05em #fffefe;
+  }
 }
 
 #bgArr {
@@ -100,7 +122,7 @@ header {
   text-decoration: none;
   color: #120817;
   background-color: #c02424;
-  width: 90%;
+  width: 80%;
   height: 90px;
   border-radius: 0.25rem;
 }
@@ -112,9 +134,10 @@ header {
 }
 .check_btn span {
   width: 82%;
-  height: 50px;
+  line-height: 50px;
   display: inherit;
   font-size: 50px;
+  flex-wrap: nowrap;
   border-radius: inherit;
   background-color: #e4b4b4;
   padding: 1rem 2rem;
@@ -129,5 +152,13 @@ header {
 @media (max-width: 1440px) {
   .container {
     width: 100vw;
+    .left-section {
+      h1 {
+        font-size: 60px;
+      }
+      .check_btn span {
+        padding: 1rem 1.5rem;
+      }
+    }
   }
 }

@@ -53,66 +53,64 @@ const carousel = () => {
 
   // mySwiper1.controller.control = mySwiper2;
   return (
-    <div>
-      <div className="swiper-container">
-        <img className="left-rect" src={left_rectangle} alt="" />
-        {/* Swiper 1 */}
-        <Swiper
-          effect={"cards"}
-          grabCursor={true}
-          modules={[EffectCards, Navigation, Pagination, Autoplay, Controller]}
-          loop={true}
-          navigation={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
-          onSwiper={setFirstSwiper}
-          controller={{ control: secondSwiper }}
-          className="mySwiper1"
-        >
-          <div className="swiper-wrapper">
-            <SwiperSlide className="swiper-slide sShadow">
-              <img src={cadicate_T2} alt="" onclick="open01()" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide sShadow">
-              <img src={cadicate_H2} alt="" onclick="open02()" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide sShadow">
-              <img src={cadicate_S2} alt="" onclick="open03()" />
-            </SwiperSlide>
+    <div className="swiper-container">
+      <img className="left-rect" src={left_rectangle} alt="" />
+      {/* Swiper 1 */}
+      <Swiper
+        effect={"cards"}
+        grabCursor={true}
+        modules={[EffectCards, Navigation, Pagination, Autoplay, Controller]}
+        loop={true}
+        navigation={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        onSwiper={setFirstSwiper}
+        controller={{ control: secondSwiper }}
+        className="mySwiper1"
+      >
+        <div className="swiper-wrapper">
+          <SwiperSlide className="swiper-slide sShadow">
+            <img src={cadicate_T2} alt="" onclick="open01()" />
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slide sShadow">
+            <img src={cadicate_H2} alt="" onclick="open02()" />
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slide sShadow">
+            <img src={cadicate_S2} alt="" onclick="open03()" />
+          </SwiperSlide>
 
-            {/* Navigation buttons */}
-            <div className="swiper-button-prev"></div>
-            <div className="swiper-button-next"></div>
-          </div>
-        </Swiper>
-        <Swiper
-          className="mySwiper2 slogan"
-          modules={[Controller]}
-          loop={true}
-          grabCursor={true}
-          onSwiper={setSecondSwiper}
-          controller={{ control: firstSwiper }}
-        >
-          {/*Swiper 2 */}
+          {/* Navigation buttons */}
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div>
+        </div>
+      </Swiper>
+      <Swiper
+        className="mySwiper2 slogan"
+        modules={[Controller]}
+        loop={true}
+        grabCursor={true}
+        onSwiper={setSecondSwiper}
+        controller={{ control: firstSwiper }}
+      >
+        {/*Swiper 2 */}
 
-          <div className="swiper-wrapper">
-            <SwiperSlide className="swiper-slide">
-              <img src={slogan_1} alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide">
-              <img src={slogan_2} alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide">
-              <img src={slogan_3} alt="" />
-            </SwiperSlide>
-          </div>
+        <div className="swiper-wrapper">
+          <SwiperSlide className="swiper-slide">
+            <img src={slogan_1} alt="" />
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slide">
+            <img src={slogan_2} alt="" />
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slide">
+            <img src={slogan_3} alt="" />
+          </SwiperSlide>
+        </div>
 
-          <img className="right-rect" src={right_rectangle} alt="" />
-        </Swiper>
-      </div>
+        <img className="right-rect" src={right_rectangle} alt="" />
+      </Swiper>
     </div>
   );
 };
