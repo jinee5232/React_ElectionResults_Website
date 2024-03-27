@@ -41,6 +41,11 @@ header {
   margin: 0 auto;
   display: flex;
   overflow: hidden;
+  .main-section {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 /*格鬥大會*/
 .em-text {

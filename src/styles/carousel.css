@@ -77,11 +77,6 @@
   height: 160px;
 }
 
-.main-section {
-  display: flex;
-  width: 80vw;
-  margin: 0 auto;
-}
 .left-section {
   height: 100%;
   width: 20vw;
