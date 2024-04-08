@@ -94,3 +94,11 @@
   line-height: 35px;
   margin: 0;
 }
+@media only screen and (max-width: 768px) {
+  .swiper-container {
+    position: relative;
+    height: auto;
+    margin: auto;
+    width: 90%;
+  }
+}

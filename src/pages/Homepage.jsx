@@ -8,11 +8,6 @@ const Homepage = () => {
     <div className="container">
       <div className="main-section">
         <div className="left-section">
-          {/* <img
-        className="bgTriangle"
-        src="./images/01_homepage/triangle.png"
-        alt=""
-      />  */}
           <h1>
             2020
             <br />

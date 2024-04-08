@@ -16,6 +16,7 @@ const header = ({ headerToLayout }) => {
   // };
   const [sharebtn, setsharebtn] = useState(false);
   const [shareMove, setShareMove] = useState(false);
+  const [sidebaropen, setSidebar] = useState(false);
   // const [ClickTouch, setClickTouch] = useState(0);
   const sendMove = () => {
     setShareMove(true);
@@ -31,7 +32,7 @@ const header = ({ headerToLayout }) => {
   // };
 
   return (
-    <div>
+    <div className="HBG">
       <header className="isTop">
         <div className="wrap">
           <div className="logo">
@@ -84,7 +85,11 @@ const header = ({ headerToLayout }) => {
               </a>
             </li>
           </ul>
-          <button type="button" className="menuOpenBtn">
+          <button
+            type="button"
+            className="menuOpenBtn"
+            onClick={() => setSidebar(!sidebaropen)}
+          >
             <span></span>
           </button>
         </div>
@@ -103,6 +108,27 @@ const header = ({ headerToLayout }) => {
           <img onClick={setBack} src={Line} alt="line" />
           <img onClick={setBack} src={Plurk} alt="plurk" />
         </div>
+        {sidebaropen ? (
+          <div className="hameSidebar">
+            <ul className="menu">
+              <li>
+                <Link to="mappage">
+                  <img src={Livephoto} alt="" />
+                  開票地圖
+                </Link>
+              </li>
+              <li onClick={() => headerToLayout(true, 0)}>
+                <a>辣小英</a>
+              </li>
+              <li onClick={() => headerToLayout(true, 1)}>
+                <a>韓導</a>
+              </li>
+              <li onClick={() => headerToLayout(true, 2)}>
+                <a>辣個男人</a>
+              </li>
+            </ul>
+          </div>
+        ) : null}
       </header>
     </div>
   );

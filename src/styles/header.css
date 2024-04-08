@@ -234,6 +234,9 @@ header .wrap {
   .menuOpenBtn {
     display: none;
   }
+  .hameSidebar {
+    display: none;
+  }
 }
 .menuOpenBtn.open span {
   width: 0;
@@ -569,6 +572,39 @@ header li img {
   animation-name: share-animation002;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+.hameSidebar {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 300px;
+  height: calc(100vh - 100%);
+  background-color: #fcfcfc;
+  text-align: center;
+  z-index: 10;
+  animation: rightIn 0.3s forwards;
+  .menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    li {
+      line-height: 50px;
+      display: block;
+
+      font-size: 32px;
+      margin-right: 2rem;
+      color: #202020;
+      &:hover {
+        color: #f7d518;
+      }
+      a {
+        color: #ff6969;
+        &:hover {
+          color: #f7d518;
+        }
+      }
+    }
+  }
 }
 
 @keyframes share-animation002 {

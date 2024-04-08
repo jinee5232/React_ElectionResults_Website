@@ -18,3 +18,12 @@
     vertical-align: middle;
   }
 }
+@media only screen and (max-width: 768px) {
+  .footer {
+    position: relative;
+    p {
+      line-height: 2rem;
+      font-size: 1rem;
+    }
+  }
+}
